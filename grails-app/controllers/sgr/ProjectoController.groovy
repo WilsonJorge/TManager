@@ -49,6 +49,15 @@ class ProjectoController {
         respond projectoService.get(id)
     }
 
+    def edittable()
+    {
+        render(view: 'edit')
+    }
+
+    def project(){
+        render(view: 'project')
+    }
+
     def update(Projecto projecto) {
         if (projecto == null) {
             notFound()
