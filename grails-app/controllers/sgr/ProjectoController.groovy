@@ -19,11 +19,12 @@ class ProjectoController {
     }
 
     def create() {
-        println("MACUACUA")
+
         respond new Projecto(params)
     }
 
     def save(Projecto projecto) {
+        println("DADOS DO PARAMETRO CHEGARAM:"+params)
         if (projecto == null) {
             notFound()
             return
