@@ -9,7 +9,6 @@
     <meta name="author" content="Spruko Technologies Private Limited">
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
-
     <!-- FAVICON -->
 
     <asset:image src="favicon.ico"/>
@@ -26,7 +25,6 @@
     <!--- FONT-ICONS CSS -->
     <asset:stylesheet src="icons.css"/>
 
-
 </head>
 
 <body class="ltr app sidebar-mini light-mode">
@@ -40,7 +38,6 @@
 <!-- PAGE -->
 <div class="page">
     <div class="page-main">
-
         <!-- app-Header -->
         <div class="app-header header sticky">
             <div class="container-fluid main-container">
@@ -230,6 +227,7 @@
         <!-- /app-Header -->
 
         <!--APP-SIDEBAR-->
+        <!--APP-SIDEBAR-->
         <div class="sticky">
             <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
             <div class="app-sidebar">
@@ -287,7 +285,7 @@
                                 <li class="side-menu-label1"><a href="javascript:void(0)">Apps</a></li>
 
                                 <li class="sub-slide">
-                                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><span
+                                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide"><span
                                             class="sub-side-menu__label">Clientes</span><i
                                             class="sub-angle fa fa-angle-right"></i></a>
                                     <ul class="sub-slide-menu">
@@ -351,6 +349,7 @@
                 </div>
             </div>
         </div>
+        <!--/APP-SIDEBAR-->
 
         <!--app-content open-->
         <div class="app-content main-content mt-0">
@@ -361,242 +360,131 @@
                     <!-- PAGE-HEADER -->
                     <div class="page-header">
                         <div>
-                            <h1 class="page-title">Adicionar Cliente</h1>
+                            <h1 class="page-title">Clientes</h1>
                         </div>
                         <div class="ms-auto pageheader-btn">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item">aplicativos</li>
+                                <li class="breadcrumb-item">Aplicativos</li>
                                 <li class="breadcrumb-item"><a href="javascript:void(0);">Clientes</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Adicionar Clientes</li>
+                                <li class="breadcrumb-item active" aria-current="page">Clientes</li>
                             </ol>
                         </div>
                     </div>
                     <!-- PAGE-HEADER END -->
 
-                    <!--ROW OPENED-->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div  class="card">
-                                <div class="card-header border-bottom">
-                                    <h4 class="mb-0">Informações do cliente</h4>
-                                </div>
-                                <div class="card-body p-0 task-edit-main">
-                                    <div class="row p-5 border-bottom">
-                                        <div class="col-sm-12 col-md-12 col-xl-3">
-                                            <div class="form-group">
-                                                <label class="form-label text-muted">Email:</label>
-                                                <div class="input-group" id="client-email">
-                                                    <input type="text" class="form-control text-dark" placeholder="Insira o e-mail do cliente">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-12 col-xl-3">
-                                            <label class="form-label text-muted">País: </label>
-                                            <div class="form-group">
-                                                <ul>
-                                                    <li class="select-client">
-                                                        <select class="form-control select2-country-search" data-placeholder="Selecione o país">
-                                                            <option label="defaultOption" value="def" selected>Selecione o País</option>
-                                                            <option value="UM">United States of America</option>
-                                                            <option value="AF">Afghanistan</option>
-                                                            <option value="AL">Albania</option>
-                                                            <option value="AD">Andorra</option>
-                                                            <option value="AG">Antigua and Barbuda</option>
-                                                            <option value="AU">Australia</option>
-                                                            <option value="AM">Armenia</option>
-                                                            <option value="AO">Angola</option>
-                                                            <option value="AR">Argentina</option>
-                                                            <option value="AT">Austria</option>
-                                                            <option value="AZ">Azerbaijan</option>
-                                                            <option value="BA">Bosnia and Herzegovina</option>
-                                                            <option value="BB">Barbados</option>
-                                                            <option value="BD">Bangladesh</option>
-                                                            <option value="BE">Belgium</option>
-                                                            <option value="BF">Burkina Faso</option>
-                                                            <option value="BG">Bulgaria</option>
-                                                            <option value="BH">Bahrain</option>
-                                                            <option value="BJ">Benin</option>
-                                                            <option value="BN">Brunei</option>
-                                                            <option value="BO">Bolivia</option>
-                                                            <option value="BT">Bhutan</option>
-                                                            <option value="BY">Belarus</option>
-                                                            <option value="CD">Congo</option>
-                                                            <option value="CA">Canada</option>
-                                                            <option value="CF">Central African Republic</option>
-                                                            <option value="CI">Cote d'Ivoire</option>
-                                                            <option value="CL">Chile</option>
-                                                            <option value="CM">Cameroon</option>
-                                                            <option value="CN">China</option>
-                                                            <option value="CO">Colombia</option>
-                                                            <option value="CU">Cuba</option>
-                                                            <option value="CV">Cabo Verde</option>
-                                                            <option value="CY">Cyprus</option>
-                                                            <option value="DJ">Djibouti</option>
-                                                            <option value="DK">Denmark</option>
-                                                            <option value="DM">Dominica</option>
-                                                            <option value="DO">Dominican Republic</option>
-                                                            <option value="EC">Ecuador</option>
-                                                            <option value="EE">Estonia</option>
-                                                            <option value="ER">Eritrea</option>
-                                                            <option value="ET">Ethiopia</option>
-                                                            <option value="FI">Finland</option>
-                                                            <option value="FJ">Fiji</option>
-                                                            <option value="FR">France</option>
-                                                            <option value="GA">Gabon</option>
-                                                            <option value="GD">Grenada</option>
-                                                            <option value="GE">Georgia</option>
-                                                            <option value="GH">Ghana</option>
-                                                            <option value="GH">Ghana</option>
-                                                            <option value="HN">Honduras</option>
-                                                            <option value="HT">Haiti</option>
-                                                            <option value="HU">Hungary</option>
-                                                            <option value="ID">Indonesia</option>
-                                                            <option value="IE">Ireland</option>
-                                                            <option value="IL">Israel</option>
-                                                            <option value="IN">India</option>
-                                                            <option value="IQ">Iraq</option>
-                                                            <option value="IR">Iran</option>
-                                                            <option value="IS">Iceland</option>
-                                                            <option value="IT">Italy</option>
-                                                            <option value="JM">Jamaica</option>
-                                                            <option value="JO">Jordan</option>
-                                                            <option value="JP">Japan</option>
-                                                            <option value="KE">Kenya</option>
-                                                            <option value="KG">Kyrgyzstan</option>
-                                                            <option value="KI">Kiribati</option>
-                                                            <option value="KW">Kuwait</option>
-                                                            <option value="KZ">Kazakhstan</option>
-                                                            <option value="LA">Laos</option>
-                                                            <option value="LB">Lebanons</option>
-                                                            <option value="LI">Liechtenstein</option>
-                                                            <option value="LR">Liberia</option>
-                                                            <option value="LS">Lesotho</option>
-                                                            <option value="LT">Lithuania</option>
-                                                            <option value="LU">Luxembourg</option>
-                                                            <option value="LV">Latvia</option>
-                                                            <option value="LY">Libya</option>
-                                                            <option value="MA">Morocco</option>
-                                                            <option value="MC">Monaco</option>
-                                                            <option value="MD">Moldova</option>
-                                                            <option value="ME">Montenegro</option>
-                                                            <option value="MG">Madagascar</option>
-                                                            <option value="MH">Marshall Islands</option>
-                                                            <option value="MK">Macedonia (FYROM)</option>
-                                                            <option value="ML">Mali</option>
-                                                            <option value="MM">Myanmar (formerly Burma)</option>
-                                                            <option value="MN">Mongolia</option>
-                                                            <option value="MR">Mauritania</option>
-                                                            <option value="MT">Malta</option>
-                                                            <option value="MV">Maldives</option>
-                                                            <option value="MW">Malawi</option>
-                                                            <option value="MX">Mexico</option>
-                                                            <option value="MZ">Mozambique</option>
-                                                            <option value="NA">Namibia</option>
-                                                            <option value="NG">Nigeria</option>
-                                                            <option value="NO">Norway</option>
-                                                            <option value="NP">Nepal</option>
-                                                            <option value="NR">Nauru</option>
-                                                            <option value="NZ">New Zealand</option>
-                                                            <option value="OM">Oman</option>
-                                                            <option value="PA">Panama</option>
-                                                            <option value="PF">Paraguay</option>
-                                                            <option value="PG">Papua New Guinea</option>
-                                                            <option value="PH">Philippines</option>
-                                                            <option value="PK">Pakistan</option>
-                                                            <option value="PL">Poland</option>
-                                                            <option value="QA">Qatar</option>
-                                                            <option value="RO">Romania</option>
-                                                            <option value="RU">Russia</option>
-                                                            <option value="RW">Rwanda</option>
-                                                            <option value="SA">Saudi Arabia</option>
-                                                            <option value="SB">Solomon Islands</option>
-                                                            <option value="SC">Seychelles</option>
-                                                            <option value="SD">Sudan</option>
-                                                            <option value="SE">Sweden</option>
-                                                            <option value="SG">Singapore</option>
-                                                            <option value="TG">Togo</option>
-                                                            <option value="TH">Thailand</option>
-                                                            <option value="TJ">Tajikistan</option>
-                                                            <option value="TL">Timor-Leste</option>
-                                                            <option value="TM">Turkmenistan</option>
-                                                            <option value="TN">Tunisia</option>
-                                                            <option value="TO">Tonga</option>
-                                                            <option value="TR">Turkey</option>
-                                                            <option value="TT">Trinidad and Tobago</option>
-                                                            <option value="TW">Taiwan</option>
-                                                            <option value="UA">Ukraine</option>
-                                                            <option value="UG">Uganda</option>
-                                                            <option value="UY">Uruguay</option>
-                                                            <option value="UZ">Uzbekistan</option>
-                                                            <option value="VA">Vatican City (Holy See)</option>
-                                                            <option value="VE">Venezuela</option>
-                                                            <option value="VN">Vietnam</option>
-                                                            <option value="VU">Vanuatu</option>
-                                                            <option value="YE">Yemen</option>
-                                                            <option value="ZM">Zambia</option>
-                                                            <option value="ZW">Zimbabwe</option>
-                                                        </select>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-12 col-xl-3">
-                                            <div class="form-group">
-                                                <label class="form-label text-muted">Número de telemóvel:</label>
-                                                <div class="input-group" id="client-mobilenumber">
-                                                    <input type="number" class="form-control text-dark" placeholder="Digite o número do celular">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row p-5 border-bottom">
-                                        <div class="col-xl-12">
-                                            <h4 class="mb-4">Detalhes da Empresa</h4>
-                                        </div>
-                                        <div class="col-sm-12 col-md-12 col-xl-4">
-                                            <div class="form-group">
-                                                <label class="form-label text-muted">Nome da empresa:</label>
-                                                <div class="input-group" id="company-name">
-                                                    <input type="text" class="form-control text-dark" placeholder="Insira o nome da empresa">
-                                                </div>
-                                            </div>
-                                        </div>
+                    <!-- Row -->
+                    <div class="row clients-contacts-main">
+                        <div class="col-md-12 col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl col-lg-6 col-md-12">
+                                            <div class="btn-list">
+                                                <a href="client-create.html" class="btn btn-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn text-white" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M16,11.5h-3.5V8c0-0.276123-0.223877-0.5-0.5-0.5S11.5,7.723877,11.5,8v3.5H8c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h3.5v3.5005493C11.5001831,16.2765503,11.723999,16.5001831,12,16.5h0.0006104C12.2765503,16.4998169,12.5001831,16.276001,12.5,16v-3.5H16c0.276123,0,0.5-0.223877,0.5-0.5S16.276123,11.5,16,11.5z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5202026-0.0062866,9.9937134-4.4797974,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9682617,0.0056152,8.9943848,4.0317383,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
+                                                    Adicionar cliente
+                                                </a>
 
-                                        <div class="col-sm-12 col-md-12 col-xl-3">
-                                            <div class="form-group">
-                                                <label class="form-label text-muted">Número de telefone do escritório:</label>
-                                                <div class="input-group" id="company-phonenumber">
-                                                    <input type="number" class="form-control text-dark" placeholder="Digite o número de telefone">
-                                                </div>
+                                                <a href="#" role="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M20.5,6h-2H16V4.5c-0.0012817-1.380188-1.119812-2.4987183-2.5-2.5h-3C9.119873,2.0014648,8.0014648,3.119873,8,4.5V6H5.5C5.4998169,6,5.4996338,6,5.4993896,6H3.5C3.223877,6,3,6.223877,3,6.5S3.223877,7,3.5,7H5v12.5c0.0014648,1.380127,1.119873,2.4985352,2.5,2.5h9c1.380188-0.0012817,2.4987183-1.119812,2.5-2.5V7h1.5C20.776123,7,21,6.776123,21,6.5S20.776123,6,20.5,6z M9,4.5C9.0009155,3.671936,9.671936,3.0009155,10.5,3h3c0.828064,0.0009155,1.4990845,0.671936,1.5,1.5V6H9V4.5z M18,19.5c-0.0009155,0.828064-0.671936,1.4990845-1.5,1.5h-9c-0.828064-0.0009155-1.4990845-0.671936-1.5-1.5V7h2.5h7h0.0006104H18V19.5z"/></svg>
+                                                    Excluir tudo
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-12 col-xl-3">
-                                            <div class="form-group">
-                                                <label class="form-label text-muted">Cidade:</label>
-                                                <div class="input-group" id="company-city">
-                                                    <input type="text" class="form-control text-dark" placeholder="Cidade">
-                                                </div>
+                                        <div class="col-xl-4 col-lg-6 col-md-12 mt-1 mt-lg-0">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Pesquisar Clientes.....">
+                                                <button class="btn ripple btn-primary text-white input-group-text border-0" type="button">Search</button>
                                             </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-12 col-xl-6">
-                                            <div class="form-group">
-                                                <label class="form-label text-muted">Endereço da Empresa:</label>
-                                                <textarea class="form-control" name="company-address" id="company-address" cols="30" rows="4" placeholder="AV.Nelson Mandela"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row p-5">
-                                        <div class="btn-list text-end">
-                                            <button class="btn btn-outline-danger"> <i class="fe fe-x-circle"></i> Cancelar</button>
-                                            <button class="btn btn-primary"> <i class="fe fe-check-circle"></i> Gravar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-6 col-md-12 col-xl-4 col-sm-12">
+                            <div class="card mb-5">
+                                <div class="card-body">
+                                    <div class="client-title mt-0">
+                                        <figure class="rounded-circle align-self-start mb-0">
+
+                                        </figure>
+                                        <div class="media-body">
+                                            <h4 class="time-title p-0 mb-0 font-weight-semibold leading-normal"><a href="javascript:void(0)" class="text-dark">CMAM</a></h4>
+                                            <span class="text-muted">Moçambique</span>
+                                        </div>
+                                        <button class="btn btn-primary d-none d-sm-block me-2"><i class="fa fa-comments"></i> </button>
+                                        <button class="btn btn-info d-none d-sm-block"><i class="fa fa-phone"></i> </button>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="pe-4 border-end d-flex align-items-center justify-content-center">
+                                            <h5 class="mb-0 me-3 text-muted">Projeto</h5>
+                                            <p class="m-0 text-dark">2</p>
+                                        </div>
+                                        <div class="ms-4 d-flex align-items-center justify-content-center">
+                                            <h5 class="mb-0 me-3 text-muted">Tarefas</h5>
+                                            <p class="m-0 text-dark">2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-xl-4 col-sm-12">
+                            <div class="card mb-5">
+                                <div class="card-body">
+                                    <div class="client-title mt-0">
+                                        <figure class="rounded-circle align-self-start mb-0">
+
+                                        </figure>
+                                        <div class="media-body">
+                                            <h4 class="time-title p-0 mb-0 font-weight-semibold leading-normal"><a href="javascript:void(0)" class="text-dark">UGPK</a></h4>
+                                            <span class="text-muted">Moçambique</span>
+                                        </div>
+                                        <button class="btn btn-primary d-none d-sm-block me-2"><i class="fa fa-comments"></i> </button>
+                                        <button class="btn btn-info d-none d-sm-block"><i class="fa fa-phone"></i> </button>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="pe-4 border-end d-flex align-items-center justify-content-center">
+                                            <h5 class="mb-0 me-3 text-muted">Projetos</h5>
+                                            <p class="m-0 text-dark">3</p>
+                                        </div>
+                                        <div class="ms-4 d-flex align-items-center justify-content-center">
+                                            <h5 class="mb-0 me-3 text-muted">Tarefas</h5>
+                                            <p class="m-0 text-dark">4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-xl-4 col-sm-12">
+                            <div class="card mb-5">
+                                <div class="card-body">
+                                    <div class="client-title mt-0">
+                                        <figure class="rounded-circle align-self-start mb-0">
+
+                                        </figure>
+                                        <div class="media-body">
+                                            <h4 class="time-title p-0 mb-0 font-weight-semibold leading-normal"><a href="javascript:void(0)" class="text-dark">Ministerio do Trabalho</a></h4>
+                                            <span class="text-muted">Moçambique</span>
+                                        </div>
+                                        <button class="btn btn-primary d-none d-sm-block me-2"><i class="fa fa-comments"></i> </button>
+                                        <button class="btn btn-info d-none d-sm-block"><i class="fa fa-phone"></i> </button>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="pe-4 border-end d-flex align-items-center justify-content-center">
+                                            <h5 class="mb-0 me-3 text-muted">Projetos</h5>
+                                            <p class="m-0 text-dark">1</p>
+                                        </div>
+                                        <div class="ms-4 d-flex align-items-center justify-content-center">
+                                            <h5 class="mb-0 me-3 text-muted">Tarefas</h5>
+                                            <p class="m-0 text-dark">53</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <!--ROW CLOSED-->
+                    <!-- End Row -->
 
                 </div>
             </div>
@@ -621,43 +509,26 @@
 <a href="#top" id="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
 
 <!-- JQUERY JS -->
+
 <asset:javascript src="jquery.min.js"/>
 
 <!-- BOOTSTRAP JS -->
-<asset:javascript src="popper.min.js"/>
-
-<asset:javascript src="bootstrap.min.js"/>
-
-<!-- SIDE-MENU JS-->
+<asset:javascript src="bootstrap/js/popper.min.js"/>
+<asset:javascript src="bootstrap/js/bootstrap.min.js"/>
+<!-- SIDE-MENU JS --
 <asset:javascript src="plugins/sidemenu/sidemenu.js"/>
-
-<!-- INTERNAL SELECT2 JS -->
-<asset:javascript src="select2/select2.full.min.js"/>
-<!-- INTERNAL DATA-TABLES JS-->
-
-<asset:javascript src="datatable/js/jquery.dataTables.min.js"/>
-
-<asset:javascript src="datatable/js/dataTables.bootstrap5.js"/>
-
-<asset:javascript src="datatable/dataTables.responsive.min.js"/>
-
 <!-- Perfect SCROLLBAR JS-->
+
 <asset:javascript src="plugins/p-scroll/perfect-scrollbar.js"/>
 <asset:javascript src="plugins/p-scroll/pscroll.js"/>
-
-<!-- SELECT2 JS -->
-<asset:javascript src="plugins/select2/select2.full.min.js"/>
-
-<!-- TASK EDIT JS-->
-
-<asset:javascript src="client-create.js"/>
-
 <!-- STICKY JS -->
+
 <asset:javascript src="sticky.js"/>
 <!-- COLOR THEME JS -->
 
 <asset:javascript src="themeColors.js"/>
 <!-- CUSTOM JS -->
+
 <asset:javascript src="custom.js"/>
 </body>
 </html>

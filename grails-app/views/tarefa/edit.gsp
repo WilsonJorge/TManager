@@ -318,12 +318,36 @@
                         </li>
                         <li class="slide">
                             <a class="side-menu__item" data-bs-toggle="slide" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M21.5,21h-19C2.223877,21,2,21.223877,2,21.5S2.223877,22,2.5,22h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,21,21.5,21z M4.5,18.0888672h5c0.1326294,0,0.2597656-0.0527344,0.3534546-0.1465454l10-10c0.000061,0,0.0001221-0.000061,0.0001831-0.0001221c0.1951294-0.1952515,0.1950684-0.5117188-0.0001831-0.7068481l-5-5c0-0.000061-0.000061-0.0001221-0.0001221-0.0001221c-0.1951904-0.1951904-0.5117188-0.1951294-0.7068481,0.0001221l-10,10C4.0526733,12.3291016,4,12.4562378,4,12.5888672v5c0,0.0001831,0,0.0003662,0,0.0005493C4.0001831,17.8654175,4.223999,18.0890503,4.5,18.0888672z M14.5,3.2958984l4.2930298,4.2929688l-2.121582,2.121582l-4.2926025-4.293396L14.5,3.2958984z M5,12.7958984l6.671814-6.671814l4.2926025,4.293396l-6.6713867,6.6713867H5V12.7958984z"/></svg>
+                                <span class="side-menu__label">Register</span><i class="angle fa fa-angle-right"></i>
+                            </a>
+                            <ul class="slide-menu">
+                                <li class="side-menu-label1"><a href="javascript:void(0)">Register</a></li>
+                                <g:link class="slide-item">Registar Departamento</g:link>
+                                <g:link class="slide-item">Registar Categoria</g:link>
+                                <g:link class="slide-item">Lista de Departamento</g:link>
+                                <g:link class="slide-item">Lista de Categoria</g:link>
+                            </ul>
+                        </li>
+
+                        <li class="slide">
+                            <a class="side-menu__item" data-bs-toggle="slide" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M21.5,13h-8.0005493C13.2234497,13.0001831,12.9998169,13.223999,13,13.5v8.0005493C13.0001831,21.7765503,13.223999,22.0001831,13.5,22h8.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5v-8.0006104C21.9998169,13.2234497,21.776001,12.9998169,21.5,13z M21,21h-7v-7h7V21z M10.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v8.0005493C2.0001831,10.7765503,2.223999,11.0001831,2.5,11h8.0006104C10.7765503,10.9998169,11.0001831,10.776001,11,10.5V2.4993896C10.9998169,2.2234497,10.776001,1.9998169,10.5,2z M10,10H3V3h7V10z M10.5,13H2.4993896C2.2234497,13.0001831,1.9998169,13.223999,2,13.5v8.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h8.0006104C10.7765503,21.9998169,11.0001831,21.776001,11,21.5v-8.0006104C10.9998169,13.2234497,10.776001,12.9998169,10.5,13z M10,21H3v-7h7V21z M21.5,2h-8.0005493C13.2234497,2.0001831,12.9998169,2.223999,13,2.5v8.0005493C13.0001831,10.7765503,13.223999,11.0001831,13.5,11h8.0006104C21.7765503,10.9998169,22.0001831,10.776001,22,10.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M21,10h-7V3h7V10z"/></svg>
                                 <span class="side-menu__label">Apps</span><i class="angle fa fa-angle-right"></i>
                             </a>
                             <ul class="slide-menu">
                                 <li class="side-menu-label1"><a href="javascript:void(0)">Apps</a></li>
-                                <li><a href="#" class="slide-item">Chat</a></li>
+
+                                <li class="sub-slide">
+                                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><span
+                                            class="sub-side-menu__label">Clientes</span><i
+                                            class="sub-angle fa fa-angle-right"></i></a>
+                                    <ul class="sub-slide-menu">
+                                        <g:link class="sub-slide-item" controller="cliente" action="index" >Clientes</g:link>
+                                        <g:link class="sub-slide-item" controller="cliente" action="create">Adicionar Clientes</g:link>
+                                    </ul>
+                                </li>
+
                                 <li class="sub-slide">
                                     <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><span
                                             class="sub-side-menu__label">Gestor de Ficheiros</span><i
@@ -339,7 +363,7 @@
                                             class="sub-side-menu__label">Projectos</span><i
                                             class="sub-angle fa fa-angle-right"></i></a>
                                     <ul class="sub-slide-menu">
-                                        <g:link controller="projecto" action="" class="sub-slide-item">Projetos</g:link>
+                                        <g:link controller="projecto" action="#" class="sub-slide-item">Projetos</g:link>
 
                                         <g:link controller="projecto" action="index" class="sub-slide-item">Lista de Projetos</g:link>
 
@@ -348,10 +372,12 @@
                                         <g:link controller="projecto" action="create" class="sub-slide-item">Criar Novo Projeto</g:link>
 
                                         <g:link controller="projecto" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
+
                                     </ul>
                                 </li>
 
                                 <li class="sub-slide">
+
                                     <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><span
                                             class="sub-side-menu__label">Tarefas</span><i
                                             class="sub-angle fa fa-angle-right"></i></a>
@@ -362,8 +388,10 @@
                                         <g:link controller="tarefa" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                         <g:link controller="tarefa" action="create" class="sub-slide-item">Criar Tarefa</g:link>
+
                                     </ul>
                                 </li>
+
                             </ul>
                         </li>
                     </ul>
