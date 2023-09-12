@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-
     <!-- META DATA -->
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Spruko Technologies Private Limited">
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
+
 
     <!-- FAVICON -->
 
@@ -45,21 +45,18 @@
                 <div class="d-flex">
                     <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="#"></a>
                     <!-- sidebar-toggle-->
-                    <a class="logo-horizontal " href="#">
-
-                        <asset:image src="intellica2.png" class="header-brand-img desktop-logo" alt="logo"/>
-
-                        <asset:image src="intellica2.png" class="header-brand-img light-logo1" alt="logo"/>
+                    <a class="logo-horizontal " href="index.html">
+                        <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                        <img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1"
+                             alt="logo">
                     </a>
                     <!-- LOGO -->
-                    <!--SEARCH-->
                     <div class="main-header-center ms-3 d-none d-xl-block">
-                        <input class="form-control" placeholder="Pesquisar Resultados..." type="search">
+                        <input class="form-control" placeholder="Search for results..." type="search">
                         <button class="btn">
                             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path  d="M21.2529297,17.6464844l-2.8994141-2.8994141c-0.0021973-0.0021973-0.0043945-0.0043945-0.0065918-0.0065918c-0.8752441-0.8721313-2.2249146-0.9760132-3.2143555-0.3148804l-0.8467407-0.8467407c1.0981445-1.2668457,1.7143555-2.887146,1.715332-4.5747681c0.0021973-3.8643799-3.1286621-6.9989014-6.993042-7.0011597S2.0092773,5.1315308,2.007019,8.9959106S5.1356201,15.994812,9,15.9970703c1.6889038,0.0029907,3.3114014-0.6120605,4.5789185-1.7111206l0.84729,0.84729c-0.6630859,0.9924316-0.5566406,2.3459473,0.3208618,3.2202759l2.8994141,2.8994141c0.4780884,0.4786987,1.1271973,0.7471313,1.8037109,0.7460938c0.6766357,0.0001831,1.3256226-0.2686768,1.803894-0.7472534C22.2493286,20.2558594,22.2488403,18.6417236,21.2529297,17.6464844z M9.0084229,14.9970703c-3.3120728,0.0023193-5.9989624-2.6807861-6.0012817-5.9928589S5.6879272,3.005249,9,3.0029297c1.5910034-0.0026855,3.1175537,0.628479,4.2421875,1.7539062c1.1252441,1.1238403,1.7579956,2.6486206,1.7590942,4.2389526C15.0036011,12.3078613,12.3204956,14.994751,9.0084229,14.9970703z M20.5458984,20.5413818c-0.604126,0.6066284-1.5856934,0.6087036-2.1923828,0.0045166l-2.8994141-2.8994141c-0.2913818-0.2910156-0.4549561-0.6861572-0.4544678-1.0979614C15.0006714,15.6928101,15.6951294,15,16.5507812,15.0009766c0.4109497-0.0005493,0.8051758,0.1624756,1.0957031,0.453125l2.8994141,2.8994141C21.1482544,18.9584351,21.1482544,19.9364624,20.5458984,20.5413818z"/></svg>
                         </button>
                     </div>
-                    <!--SEARCH-->
                     <div class="d-flex order-lg-2 ms-auto header-right-icons">
                         <div class="dropdown d-xl-none d-md-block d-none">
                             <a href="#" class="nav-link icon" data-bs-toggle="dropdown">
@@ -67,7 +64,7 @@
                             </a>
                             <div class="dropdown-menu header-search dropdown-menu-start">
                                 <div class="input-group w-100 p-2">
-                                    <input type="text" class="form-control" placeholder="Pesquise....">
+                                    <input type="text" class="form-control" placeholder="Search....">
                                     <div class="input-group-text btn btn-primary">
                                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path  d="M21.2529297,17.6464844l-2.8994141-2.8994141c-0.0021973-0.0021973-0.0043945-0.0043945-0.0065918-0.0065918c-0.8752441-0.8721313-2.2249146-0.9760132-3.2143555-0.3148804l-0.8467407-0.8467407c1.0981445-1.2668457,1.7143555-2.887146,1.715332-4.5747681c0.0021973-3.8643799-3.1286621-6.9989014-6.993042-7.0011597S2.0092773,5.1315308,2.007019,8.9959106S5.1356201,15.994812,9,15.9970703c1.6889038,0.0029907,3.3114014-0.6120605,4.5789185-1.7111206l0.84729,0.84729c-0.6630859,0.9924316-0.5566406,2.3459473,0.3208618,3.2202759l2.8994141,2.8994141c0.4780884,0.4786987,1.1271973,0.7471313,1.8037109,0.7460938c0.6766357,0.0001831,1.3256226-0.2686768,1.803894-0.7472534C22.2493286,20.2558594,22.2488403,18.6417236,21.2529297,17.6464844z M9.0084229,14.9970703c-3.3120728,0.0023193-5.9989624-2.6807861-6.0012817-5.9928589S5.6879272,3.005249,9,3.0029297c1.5910034-0.0026855,3.1175537,0.628479,4.2421875,1.7539062c1.1252441,1.1238403,1.7579956,2.6486206,1.7590942,4.2389526C15.0036011,12.3078613,12.3204956,14.994751,9.0084229,14.9970703z M20.5458984,20.5413818c-0.604126,0.6066284-1.5856934,0.6087036-2.1923828,0.0045166l-2.8994141-2.8994141c-0.2913818-0.2910156-0.4549561-0.6861572-0.4544678-1.0979614C15.0006714,15.6928101,15.6951294,15,16.5507812,15.0009766c0.4109497-0.0005493,0.8051758,0.1624756,1.0957031,0.453125l2.8994141,2.8994141C21.1482544,18.9584351,21.1482544,19.9364624,20.5458984,20.5413818z"/></svg>
                                     </div>
@@ -114,18 +111,12 @@
                                             </span>
                                         </a>
                                     </div>
-
                                     <!-- SHORTCUTS -->
                                     <div class="dropdown d-md-flex">
                                         <a class="nav-link icon full-screen-link nav-link-bg">
                                             <svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M8.5,21H3v-5.5C3,15.223877,2.776123,15,2.5,15S2,15.223877,2,15.5v6.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h6C8.776123,22,9,21.776123,9,21.5S8.776123,21,8.5,21z M8.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v6.0005493C2.0001831,8.7765503,2.223999,9.0001831,2.5,9h0.0006104C2.7765503,8.9998169,3.0001831,8.776001,3,8.5V3h5.5C8.776123,3,9,2.776123,9,2.5S8.776123,2,8.5,2z M21.5,15c-0.276123,0-0.5,0.223877-0.5,0.5V21h-5.5c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h6.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5v-6C22,15.223877,21.776123,15,21.5,15z M21.5,2h-6C15.223877,2,15,2.223877,15,2.5S15.223877,3,15.5,3H21v5.5005493C21.0001831,8.7765503,21.223999,9.0001831,21.5,9h0.0006104C21.7765503,8.9998169,22.0001831,8.776001,22,8.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z"/></svg>
                                         </a>
                                     </div>
-                                    <!-- FULL-SCREEN -->
-                                    <div class="dropdown  d-flex shopping-cart">
-
-                                    </div>
-                                    <!-- CART -->
                                     <div class="dropdown d-md-flex message">
                                         <a href="javascript:void(0);" class="nav-link icon text-center" data-bs-toggle="dropdown" aria-expanded="false">
                                             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17.4541016,11H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,11,17.4541016,11z M19.5,2h-15C3.119812,2.0012817,2.0012817,3.119812,2,4.5v11c0.0012817,1.380188,1.119812,2.4987183,2.5,2.5h12.7930298l3.8534546,3.8535156C21.2402344,21.9473267,21.3673706,22,21.5,22c0.276123,0,0.5-0.223877,0.5-0.5v-17C21.9987183,3.119812,20.880188,2.0012817,19.5,2z M21,20.2929688l-3.1464844-3.1464844C17.7597656,17.0526733,17.6326294,17,17.5,17h-13c-0.828064-0.0009155-1.4990845-0.671936-1.5-1.5v-11C3.0009155,3.671936,3.671936,3.0009155,4.5,3h15c0.828064,0.0009155,1.4990845,0.671936,1.5,1.5V20.2929688z M17.4541016,8H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,8,17.4541016,8z"/></svg>
@@ -140,23 +131,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--BOXO OF MESSAGES--->
                                             <div class="message-menu ps2 overflow-hidden">
-                                                <a class="dropdown-item d-flex" href="#">
-                                                    <span class="avatar avatar-md brround me-3 align-self-center cover-image" data-bs-image-src="../assets/images/users/1.jpg" style="background: url(&quot;../assets/images/users/1.jpg&quot;) center center;"></span>
-                                                    <div class="wd-90p">
-                                                        <div class="d-flex">
-                                                            <h5 class="mb-1">Hawaii Hilton</h5>
-                                                            <small class="text-muted ms-auto text-end"> 11.07 am </small>
-                                                        </div>
-                                                        <span class="fs-12 text-muted">xxxxxxxxx....</span>
-                                                    </div>
-                                                </a>
 
-                                            </div>
                                             <div class="dropdown-divider m-0"></div>
                                             <div class="text-center p-3">
-                                                <a class="btn btn-primary">Ver Todas Mensagens</a>
+                                                <a class="btn btn-primary">View All Messages</a>
                                             </div>
                                         </div>
                                     </div>
@@ -169,29 +148,18 @@
                                         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                             <div class="drop-heading border-bottom">
                                                 <div class="d-flex">
-                                                    <h6 class="mt-1 mb-0 fs-15 text-dark">Notificacoes</h6>
+                                                    <h6 class="mt-1 mb-0 fs-15 text-dark">Notifications</h6>
                                                     <div class="ms-auto">
                                                         <span class="xm-title badge bg-secondary text-white fw-normal fs-11 badge-pill"> <a href="javascript:void(0);" class="showall-text text-white">Clear</a> </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--BOX OF NOTIFICATIONS--->
                                             <div class="notifications-menu ps3 overflow-hidden">
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="notification-each d-flex">
-                                                        <div class="me-3 notifyimg  bg-primary brround">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17.4541016,11H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,11,17.4541016,11z M19.5,2h-15C3.119812,2.0012817,2.0012817,3.119812,2,4.5v11c0.0012817,1.380188,1.119812,2.4987183,2.5,2.5h12.7930298l3.8534546,3.8535156C21.2402344,21.9473267,21.3673706,22,21.5,22c0.276123,0,0.5-0.223877,0.5-0.5v-17C21.9987183,3.119812,20.880188,2.0012817,19.5,2z M21,20.2929688l-3.1464844-3.1464844C17.7597656,17.0526733,17.6326294,17,17.5,17h-13c-0.828064-0.0009155-1.4990845-0.671936-1.5-1.5v-11C3.0009155,3.671936,3.671936,3.0009155,4.5,3h15c0.828064,0.0009155,1.4990845,0.671936,1.5,1.5V20.2929688z M17.4541016,8H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,8,17.4541016,8z"/></svg>
-                                                        </div>
-                                                        <div>
-                                                            <span class="notification-label mb-1">Nova mensagem Recebida</span>
-                                                            <span class="notification-subtext text-muted">2 hours ago</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+
                                             </div>
                                             <div class="dropdown-divider m-0"></div>
                                             <div class="text-center p-3">
-                                                <a class="btn btn-primary">Ver Todas Notificacoes</a>
+                                                <a class="btn btn-primary">View All Notifications</a>
                                             </div>
                                         </div>
                                     </div>
@@ -207,13 +175,13 @@
                                             </div>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="profile.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M14.6650391,13.3672485C16.6381226,12.3842773,17.9974365,10.3535767,18,8c0-3.3137207-2.6862793-6-6-6S6,4.6862793,6,8c0,2.3545532,1.3595581,4.3865967,3.3334961,5.3690186c-3.6583862,1.0119019-6.5859375,4.0562134-7.2387695,8.0479736c-0.0002441,0.0013428-0.0004272,0.0026855-0.0006714,0.0040283c-0.0447388,0.272583,0.1399536,0.5297852,0.4125366,0.5745239c0.272522,0.0446777,0.5297241-0.1400146,0.5744629-0.4125366c0.624939-3.8344727,3.6308594-6.8403931,7.465332-7.465332c4.9257812-0.8027954,9.5697632,2.5395508,10.3725586,7.465332C20.9594727,21.8233643,21.1673584,21.9995117,21.4111328,22c0.0281372,0.0001831,0.0562134-0.0021362,0.0839844-0.0068359h0.0001831c0.2723389-0.0458984,0.4558716-0.303833,0.4099731-0.5761719C21.2677002,17.5184937,18.411377,14.3986206,14.6650391,13.3672485z M12,13c-2.7614136,0-5-2.2385864-5-5s2.2385864-5,5-5c2.7600708,0.0032349,4.9967651,2.2399292,5,5C17,10.7614136,14.7614136,13,12,13z"/></svg>
-                                                Perfil
+                                                Profile
                                             </a>
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="login.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M10.6523438,16.140625c-0.09375,0.09375-0.1464233,0.2208862-0.1464233,0.3534546c0,0.276123,0.2238159,0.5,0.499939,0.500061c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l4.4941406-4.4941406c0.000061-0.000061,0.0001221-0.000061,0.0001831-0.0001221c0.1951294-0.1952515,0.1950684-0.5117188-0.0001831-0.7068481L11.359314,7.1524048c-0.1937256-0.1871338-0.5009155-0.1871338-0.6947021,0c-0.1986084,0.1918335-0.2041016,0.5083618-0.0122681,0.7069702L14.2930298,11.5H2.5C2.223877,11.5,2,11.723877,2,12s0.223877,0.5,0.5,0.5h11.7930298L10.6523438,16.140625z M16.4199829,3.0454102C11.4741821,0.5905762,5.4748535,2.6099243,3.0200195,7.5556641C2.8970337,7.8029175,2.9978027,8.1030884,3.2450562,8.2260742C3.4923706,8.3490601,3.7925415,8.248291,3.9155273,8.0010376c0.8737793-1.7612305,2.300354-3.1878052,4.0615845-4.0615845C12.428833,1.730835,17.828064,3.5492554,20.0366821,8.0010376c2.2085571,4.4517212,0.3901367,9.8509521-4.0615845,12.0595703c-4.4517212,2.2085571-9.8510132,0.3901367-12.0595703-4.0615845c-0.1229858-0.2473145-0.4231567-0.3480835-0.6704102-0.2250977c-0.2473145,0.1229858-0.3480835,0.4230957-0.2250977,0.6704102c1.6773682,3.4109497,5.1530762,5.5667114,8.9541016,5.5537109c3.7976685,0.0003662,7.2676392-2.1509399,8.9560547-5.5526733C23.3850098,11.4996338,21.3657227,5.5002441,16.4199829,3.0454102z"/></svg>
-                                                Sair
+                                                Log out
                                             </a>
                                         </div>
                                     </div>
@@ -356,16 +324,17 @@
             <div class="side-app">
                 <!-- CONTAINER -->
                 <div class="main-container container-fluid">
+
                     <!-- PAGE-HEADER -->
                     <div class="page-header">
                         <div>
-                            <h1 class="page-title">Lista de Tarefas</h1>
+                            <h1 class="page-title">Editar tarefa</h1>
                         </div>
                         <div class="ms-auto pageheader-btn">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">Aplicativos</li>
                                 <li class="breadcrumb-item"><a href="javascript:void(0);">Tarefas</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Lista de Tarefas</li>
+                                <li class="breadcrumb-item active" aria-current="page">Editar Tarefas</li>
                             </ol>
                         </div>
                     </div>
@@ -373,247 +342,197 @@
 
                     <!--ROW OPENED-->
                     <div class="row">
-                        <div class="col-md-12 col-xl-12">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Total Tarefas</h4>
-                                                    <p>35</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 bg-primary br-5 d-flex align-items-center justify-content-center ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div  class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="mb-0">Informações da tarefa</h4>
+                                </div>
+                                <div class="card-body p-0 task-edit-main">
+                                    <div class="row p-5 border-bottom">
+                                        <div class="col-sm-12 col-md-12 col-xl-6">
+                                            <div class="form-group">
+                                                <label class="form-label text-muted">Título:</label>
+                                                <div class="input-group" id="task-name">
+                                                    <input type="text" class="form-control text-dark" placeholder="Insira sua tarefa" value="">
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Tarefas Finalizadas</h4>
-                                                    <p>15</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 br-5 d-flex align-items-center justify-content-center bg-secondary ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-3">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <label class="form-label text-muted">Categoria de tarefa:</label>
+                                                    <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" id="task-category" data-placeholder="Choose Category..." tabindex="-1" aria-hidden="true">
+                                                        <option label="Choose one"></option>
+                                                        <option value="empty" selected>---</option>
+                                                        <option value="sample">Relatorio</option>
+                                                        <option value="sample">Manual de Apoio</option>
+                                                        <option value="sample">Outros</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Em Progesso</h4>
-                                                    <p>4</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 br-5 d-flex align-items-center justify-content-center bg-info ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-3">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <label class="form-label text-muted">Projeto:</label>
+                                                    <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" id="project-name1" data-placeholder="Choose Project..." tabindex="-1" aria-hidden="true">
+                                                        <option label="Choose one"></option>
+                                                        <option value="empty">---</option>
+                                                        <option value="sample" selected>CMAM</option>
+                                                        <option value="sample">GIT</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Em Espera</h4>
-                                                    <p>6</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 br-5 d-flex align-items-center justify-content-center bg-warning ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-4">
+                                            <div class="form-group">
+                                                <label class="form-label text-muted">Data de início:</label>
+                                                <div id="date1-datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                                    <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
+                                                    <input class="form-control task-start-date" type="text" placeholder="Select Start Date"/>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-4 task-endDate-container">
+                                            <div class="form-group">
+                                                <label class="form-label text-muted">Data de Fim:</label>
+                                                <div id="date2-datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                                    <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
+                                                    <input class="form-control" type="text" placeholder="Select End Date"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-3 no-taskEnd-checkbox">
+                                            <div class="form-group">
+                                                <label class="custom-control custom-checkbox no-taskEnd-checkbox-container">
+                                                    <input type="checkbox" class="custom-control-input no-taskEnd-date-checkbox" checked>
+                                                    <span class="custom-control-label">Sem data de término.</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-6">
+                                            <label class="form-label text-muted">Atribuir a: </label>
+                                            <div class="form-group">
+                                                <ul>
+                                                    <li class="select-client">
+                                                        <select multiple="multiple" class="form-control select2-client-search">
+                                                            <option value="1">Sydney Madope</option>
+                                                            <option value="2">Dercio Pale</option>
+                                                            <option value="13">Firmino Massango</option>
+                                                            <option value="15" selected>Wilson Jorge</option>
+                                                        </select>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-xl-12">
+                                            <label class="form-label text-muted">Descrição:</label>
+                                            <div class="form-group">
+                                                <div id="summernote"><p>Fazer um relatorio que.......</p></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 mb-3">
-                            <div class="btn-list">
-
-                                    <g:link controller="tarefa" action="create" class="btn btn-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn text-white" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M16,11.5h-3.5V8c0-0.276123-0.223877-0.5-0.5-0.5S11.5,7.723877,11.5,8v3.5H8c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h3.5v3.5005493C11.5001831,16.2765503,11.723999,16.5001831,12,16.5h0.0006104C12.2765503,16.4998169,12.5001831,16.276001,12.5,16v-3.5H16c0.276123,0,0.5-0.223877,0.5-0.5S16.276123,11.5,16,11.5z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5202026-0.0062866,9.9937134-4.4797974,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9682617,0.0056152,8.9943848,4.0317383,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                        Nova Tarefa
-                                    </g:link>
-
-                                    <g:link controller="tarefa" action="edittable" class="btn btn-info">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn text-white" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M21.5,21h-19C2.223877,21,2,21.223877,2,21.5S2.223877,22,2.5,22h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,21,21.5,21z M4.5,18.0888672h5c0.1326294,0,0.2597656-0.0527344,0.3534546-0.1465454l10-10c0.000061,0,0.0001221-0.000061,0.0001831-0.0001221c0.1951294-0.1952515,0.1950684-0.5117188-0.0001831-0.7068481l-5-5c0-0.000061-0.000061-0.0001221-0.0001221-0.0001221c-0.1951904-0.1951904-0.5117188-0.1951294-0.7068481,0.0001221l-10,10C4.0526733,12.3291016,4,12.4562378,4,12.5888672v5c0,0.0001831,0,0.0003662,0,0.0005493C4.0001831,17.8654175,4.223999,18.0890503,4.5,18.0888672z M14.5,3.2958984l4.2930298,4.2929688l-2.121582,2.121582l-4.2926025-4.293396L14.5,3.2958984z M5,12.7958984l6.671814-6.671814l4.2926025,4.293396l-6.6713867,6.6713867H5V12.7958984z"/></svg>
-                                        Editar Tarefa
-                                    </g:link>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body tasks-table-container">
-                                    <div class="table-responsive">
-                                        <table id="tasks-table" class="table text-nowrap mb-0 table-bordered border-top border-bottom">
-                                            <thead class="table-head">
-                                            <tr>
-                                                <th class="bg-transparent border-bottom-0 w-5">Num</th>
-                                                <th class="bg-transparent border-bottom-0">Tarefa</th>
-                                                <th class="bg-transparent border-bottom-0">Projeto</th>
-                                                <th class="bg-transparent border-bottom-0">Data de vencimento</th>
-                                                <th class="bg-transparent border-bottom-0">Atribuído a</th>
-                                                <th class="bg-transparent border-bottom-0">Status</th>
-                                                <th class="bg-transparent border-bottom-0 no-btn">Ação</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody class="table-body">
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold text-center">01.</td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark" data-bs-target="#Vertically" data-bs-toggle="modal" >Plano Semanal de Entradas</a></td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark">CMAM</a></td>
-                                                <td class="text-danger fs-15 fw-semibold">25 Agosto 2023</td>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="me-2">
-                                                            <span class="data-image avatar avatar-md rounded-circle" style="background-image: url(../assets/images/users/8.jpg)"></span>
-                                                        </div>
-                                                        <div>
-                                                            <h6 class="mb-0">Sydney Madope</h6>
-                                                            <span class="text-muted fs-12">smadope@intellica.co.mz</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group mb-0">
+                                    <div class="row p-5 border-bottom">
+                                        <div class="col-xl-12">
+                                            <h6 class="mb-0 d-flex other-details">Outros detalhes<i class="fe fe-chevron-down down-arrow fs-16"></i><i class="fe fe-chevron-up up-arrow fs-16"></i></h6>
+                                            <div class="row other-details-main d-none mt-4">
+                                                <div class="col-sm-12 col-md-12 col-xl-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label text-muted">Status da tarefa: </label>
                                                         <ul>
                                                             <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Select Status">
-                                                                    <option value="IP" selected>Em Progreso</option>
-                                                                    <option value="OH">Em Espera</option>
-                                                                    <option value="CP">Finalizado</option>
+                                                                <select class="form-control select2-status-search" data-placeholder="Selecione o status">
+                                                                    <option value="empty">---</option>
+                                                                    <option value="IP" selected>Em andamento</option>
+                                                                    <option value="OH">Em espera</option>
+                                                                    <option value="CP">Concluída</option>
                                                                 </select>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-outline-primary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Mark As Completed">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-outline-secondary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Editar</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i> Informações</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-xl-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label text-muted">Prioridade:</label>
+                                                        <div class="input-group">
+                                                            <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" id="currency-type" data-placeholder="Choose Type..." tabindex="-1" aria-hidden="true">
+                                                                <option label="Choose one"></option>
+                                                                <option value="empty">---</option>
+                                                                <option value="high" selected>Alta</option>
+                                                                <option value="low">Baixo</option>
+                                                                <option value="normal">Normal</option>
+                                                            </select>
                                                         </div>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold text-center">02.</td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark" data-bs-target="#Vertically" data-bs-toggle="modal" >Dicionario de Dados</a></td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark">CMAM</a></td>
-                                                <td class="text-danger fs-15 fw-semibold">25 Agosto 2023</td>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="me-2">
-                                                            <span class="data-image avatar avatar-md rounded-circle" style="background-image: url(../assets/images/users/12.jpg)"></span>
-                                                        </div>
-                                                        <div>
-                                                            <h6 class="mb-0">Dercio Pale</h6>
-                                                            <span class="text-muted fs-12">dpale@intellica.co.mz</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-xl-4 mt-2">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label">Tornar privado</span>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group mb-0">
-                                                        <ul>
-                                                            <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Select Status">
-                                                                    <option value="IP">Em Progesso</option>
-                                                                    <option value="OH" selected>Em Esperea</option>
-                                                                    <option value="CP">Finalizado</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-outline-primary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Mark As Completed">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-outline-secondary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Editar</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i> Informações</a>
+
+                                                    <div class="col-sm-12 col-md-12 col-xl-4 mt-2">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox task-depended-container">
+                                                                <input type="checkbox" class="custom-control-input task-depended-checkbox" checked>
+                                                                <span class="custom-control-label">Esta tarefa depende de outra tarefa</span>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold text-center">03.</td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark" data-bs-target="#Vertically" data-bs-toggle="modal" >Plano de Acao do Git.</a></td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="project-details.html" class="text-dark">GIT</a></td>
-                                                <td class="text-danger fs-15 fw-semibold">23 Agosto 2023</td>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="me-2">
-                                                            <span class="data-image avatar avatar-md rounded-circle" style="background-image: url(../assets/images/users/13.jpg)"></span>
+                                                    <div class="row depended-task-main">
+                                                        <div class="col-sm-12 col-md-12 col-xl-4">
+                                                            <div class="form-group">
+                                                                <label class="form-label text-muted">Subtarefa:</label>
+                                                                <div class="input-group" id="project-name">
+                                                                    <input type="text" class="form-control text-dark" placeholder="Insira a subtarefa" value="">
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <h6 class="mb-0">Firmino Massango</h6>
-                                                            <span class="text-muted fs-12">fmassango@intellica.co.mz</span>
+                                                        <div class="col-sm-12 col-md-12 col-xl-4 subtask-endDate-container">
+                                                            <div class="form-group">
+                                                                <label class="form-label text-muted">Data final:</label>
+                                                                <div id="date3-datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                                                    <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
+                                                                    <input class="form-control" type="text" placeholder="Selecione a data de término"/>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group mb-0">
-                                                        <ul>
-                                                            <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Select Status">
-                                                                    <option value="IP">Em Progesso</option>
-                                                                    <option value="OH" >Em Espera</option>
-                                                                    <option value="CP" selected>Finalizado</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-outline-primary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Mark As Completed">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-outline-secondary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Editar</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i>Informações </a>
+                                                        <div class="col-sm-12 col-md-12 col-xl-4 no-taskEnd-checkbox">
+                                                            <div class="form-group">
+                                                                <label class="custom-control custom-checkbox no-subtaskEnd-checkbox-container">
+                                                                    <input type="checkbox" class="custom-control-input no-subtaskEnd-date-checkbox" checked>
+                                                                    <span class="custom-control-label">Sem data de término.</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-xl-12">
+                                                            <label class="form-label text-muted">Adicionar arquivos:</label>
+                                                            <div class="form-group">
+                                                                <form method="post">
+                                                                    <input type="file" class="dropify" data-bs-height="100" />
+                                                                </form>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-5">
+                                        <div class="btn-list text-end">
+                                            <button class="btn btn-outline-danger">
+                                                <i class="fe fe-x-circle"></i>
+                                                Cancelar
+                                            </button>
+                                            <button class="btn btn-primary">
+                                                <i class="fe fe-check-circle"></i>
+                                                Salvar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -638,7 +557,6 @@
         </div>
     </footer>
     <!-- FOOTER CLOSED -->
-
 </div>
 
 <!-- BACK-TO-TOP -->
@@ -652,35 +570,43 @@
 
 <asset:javascript src="bootstrap.min.js"/>
 
-<!-- SIDE-MENU JS-->
-<asset:javascript src="plugins/sidemenu/sidemenu.js"/>
 
 <!-- INTERNAL SELECT2 JS -->
 <asset:javascript src="select2/select2.full.min.js"/>
-<!-- INTERNAL DATA-TABLES JS-->
-
-<asset:javascript src="datatable/js/jquery.dataTables.min.js"/>
-
-<asset:javascript src="datatable/js/dataTables.bootstrap5.js"/>
-
-<asset:javascript src="datatable/dataTables.responsive.min.js"/>
+<!-- SIDE-MENU JS-->
+<asset:javascript src="plugins/sidemenu/sidemenu.js"/>
 
 <!-- Perfect SCROLLBAR JS-->
 <asset:javascript src="plugins/p-scroll/perfect-scrollbar.js"/>
+
 <asset:javascript src="plugins/p-scroll/pscroll.js"/>
 
-<!-- SELECT2 JS -->
-<asset:javascript src="plugins/select2/select2.full.min.js"/>
-<!-- TASKS LIST JS-->
-<asset:javascript src="tasks-list.js"/>
+<!-- bootstrap-datepicker js -->
+<asset:javascript src="plugins/bootstrap-datepicker/js/datepicker.js"/>
 
+<!-- INTERNAL Summernote Editor js -->
+
+<asset:javascript src="plugins/summernote-editor/summernote1.js"/>
+
+<asset:javascript src="summernote.js"/>
+
+<!-- FILE UPLOAD JS -->
+<asset:javascript src="plugins/fileuploads/js/fileupload.js"/>
+
+<asset:javascript src="plugins/fileuploads/js/file-upload.js"/>
+<!-- TASK EDIT JS-->
+
+<asset:javascript src="task-edit.js"/>
 <!-- STICKY JS -->
+
 <asset:javascript src="sticky.js"/>
 <!-- COLOR THEME JS -->
 
 <asset:javascript src="themeColors.js"/>
 <!-- CUSTOM JS -->
+
 <asset:javascript src="custom.js"/>
+
 </body>
 </html>
 
