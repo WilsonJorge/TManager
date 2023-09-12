@@ -372,8 +372,6 @@
 
                                         <g:link controller="projecto" action="create" class="sub-slide-item">Criar Novo Projeto</g:link>
 
-                                        <g:link controller="projecto" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
-
                                     </ul>
                                 </li>
 
@@ -385,8 +383,6 @@
                                     <ul class="sub-slide-menu">
 
                                         <g:link controller="tarefa" action="index" class="sub-slide-item">Lista de Tarefas</g:link>
-
-                                        <g:link controller="tarefa" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                         <g:link controller="tarefa" action="create" class="sub-slide-item">Criar Tarefa</g:link>
 

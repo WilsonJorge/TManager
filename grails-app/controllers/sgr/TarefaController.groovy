@@ -20,12 +20,11 @@ class TarefaController {
     }
 
     def create() {
-        println("Wilson Macuacua")
+
         respond new Tarefa(params)
     }
 
     def save(Tarefa tarefa) {
-        println("DADOS:"+params)
         if (tarefa == null) {
             notFound()
             return
@@ -48,9 +47,6 @@ class TarefaController {
     }
 
     def edit(Long id) {
-        println("MACUACUA")
-        render( view: 'edit')
-        println("WILSON")
         respond tarefaService.get(id)
     }
 

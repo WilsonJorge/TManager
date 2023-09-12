@@ -8,7 +8,6 @@
     <meta name="author" content="Spruko Technologies Private Limited">
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
-
     <!-- FAVICON -->
 
     <asset:image src="favicon.ico"/>
@@ -111,12 +110,14 @@
                                             </span>
                                         </a>
                                     </div>
+
                                     <!-- SHORTCUTS -->
                                     <div class="dropdown d-md-flex">
                                         <a class="nav-link icon full-screen-link nav-link-bg">
                                             <svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M8.5,21H3v-5.5C3,15.223877,2.776123,15,2.5,15S2,15.223877,2,15.5v6.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h6C8.776123,22,9,21.776123,9,21.5S8.776123,21,8.5,21z M8.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v6.0005493C2.0001831,8.7765503,2.223999,9.0001831,2.5,9h0.0006104C2.7765503,8.9998169,3.0001831,8.776001,3,8.5V3h5.5C8.776123,3,9,2.776123,9,2.5S8.776123,2,8.5,2z M21.5,15c-0.276123,0-0.5,0.223877-0.5,0.5V21h-5.5c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h6.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5v-6C22,15.223877,21.776123,15,21.5,15z M21.5,2h-6C15.223877,2,15,2.223877,15,2.5S15.223877,3,15.5,3H21v5.5005493C21.0001831,8.7765503,21.223999,9.0001831,21.5,9h0.0006104C21.7765503,8.9998169,22.0001831,8.776001,22,8.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z"/></svg>
                                         </a>
                                     </div>
+                                    <!-- FULL-SCREEN -->
                                     <div class="dropdown d-md-flex message">
                                         <a href="javascript:void(0);" class="nav-link icon text-center" data-bs-toggle="dropdown" aria-expanded="false">
                                             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17.4541016,11H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,11,17.4541016,11z M19.5,2h-15C3.119812,2.0012817,2.0012817,3.119812,2,4.5v11c0.0012817,1.380188,1.119812,2.4987183,2.5,2.5h12.7930298l3.8534546,3.8535156C21.2402344,21.9473267,21.3673706,22,21.5,22c0.276123,0,0.5-0.223877,0.5-0.5v-17C21.9987183,3.119812,20.880188,2.0012817,19.5,2z M21,20.2929688l-3.1464844-3.1464844C17.7597656,17.0526733,17.6326294,17,17.5,17h-13c-0.828064-0.0009155-1.4990845-0.671936-1.5-1.5v-11C3.0009155,3.671936,3.671936,3.0009155,4.5,3h15c0.828064,0.0009155,1.4990845,0.671936,1.5,1.5V20.2929688z M17.4541016,8H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,8,17.4541016,8z"/></svg>
@@ -132,7 +133,50 @@
                                                 </div>
                                             </div>
                                             <div class="message-menu ps2 overflow-hidden">
-
+                                                <a class="dropdown-item d-flex" href="chat.html">
+                                                    <span class="avatar avatar-md brround me-3 align-self-center cover-image" data-bs-image-src="../assets/images/users/1.jpg" style="background: url(&quot;../assets/images/users/1.jpg&quot;) center center;"></span>
+                                                    <div class="wd-90p">
+                                                        <div class="d-flex">
+                                                            <h5 class="mb-1">Hawaii Hilton</h5>
+                                                            <small class="text-muted ms-auto text-end"> 11.07 am </small>
+                                                        </div>
+                                                        <span class="fs-12 text-muted">Wanted to submit project by tomorrow....</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item d-flex" href="chat.html">
+                                                    <span class="avatar avatar-md brround me-3 align-self-center cover-image" data-bs-image-src="../assets/images/users/15.jpg" style="background: url(&quot;../assets/images/users/15.jpg&quot;) center center;">
+                                                    </span>
+                                                    <div class="wd-90p">
+                                                        <div class="d-flex">
+                                                            <h5 class="mb-1">Hermoini</h5>
+                                                            <small class="text-muted ms-auto text-end"> 12.32 am </small>
+                                                        </div>
+                                                        <span class="fs-12 text-muted">Planning for next big update......</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item d-flex" href="chat.html">
+                                                    <span class="avatar avatar-md brround me-3 align-self-center cover-image" data-bs-image-src="../assets/images/users/12.jpg" style="background: url(&quot;../assets/images/users/12.jpg&quot;) center center;">
+                                                    </span>
+                                                    <div class="wd-90p">
+                                                        <div class="d-flex">
+                                                            <h5 class="mb-1">Buenda osas</h5>
+                                                            <small class="text-muted ms-auto text-end"> 2:17 am </small>
+                                                        </div>
+                                                        <span class="fs-12 text-muted">Ready to submit future data...</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <span class="avatar avatar-md brround me-3 align-self-center cover-image" data-bs-image-src="../assets/images/users/4.jpg" style="background: url(&quot;../assets/images/users/4.jpg&quot;) center center;">
+                                                    </span>
+                                                    <div class="wd-90p">
+                                                        <div class="d-flex">
+                                                            <h5 class="mb-1">Gabby gibson</h5>
+                                                            <small class="text-muted ms-auto text-end"> 7:55 am </small>
+                                                        </div>
+                                                        <span class="fs-12 text-muted">Cleared all statistics from last year......</span>
+                                                    </div>
+                                                </a>
+                                            </div>
                                             <div class="dropdown-divider m-0"></div>
                                             <div class="text-center p-3">
                                                 <a class="btn btn-primary">View All Messages</a>
@@ -155,7 +199,50 @@
                                                 </div>
                                             </div>
                                             <div class="notifications-menu ps3 overflow-hidden">
-
+                                                <a class="dropdown-item" href="chat.html">
+                                                    <div class="notification-each d-flex">
+                                                        <div class="me-3 notifyimg  bg-primary brround">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17.4541016,11H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,11,17.4541016,11z M19.5,2h-15C3.119812,2.0012817,2.0012817,3.119812,2,4.5v11c0.0012817,1.380188,1.119812,2.4987183,2.5,2.5h12.7930298l3.8534546,3.8535156C21.2402344,21.9473267,21.3673706,22,21.5,22c0.276123,0,0.5-0.223877,0.5-0.5v-17C21.9987183,3.119812,20.880188,2.0012817,19.5,2z M21,20.2929688l-3.1464844-3.1464844C17.7597656,17.0526733,17.6326294,17,17.5,17h-13c-0.828064-0.0009155-1.4990845-0.671936-1.5-1.5v-11C3.0009155,3.671936,3.671936,3.0009155,4.5,3h15c0.828064,0.0009155,1.4990845,0.671936,1.5,1.5V20.2929688z M17.4541016,8H6.5458984c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h10.9082031c0.276123,0,0.5-0.223877,0.5-0.5S17.7302246,8,17.4541016,8z"/></svg>
+                                                        </div>
+                                                        <div>
+                                                            <span class="notification-label mb-1">New Message Received</span>
+                                                            <span class="notification-subtext text-muted">2 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="chat.html">
+                                                    <div class="notification-each d-flex">
+                                                        <div class="me-3 notifyimg  bg-secondary brround">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17.5078125,22.9736328h-12.5c-2.2081909-0.0023804-3.9976196-1.7918091-4-4v-8.5c0-0.276123-0.223877-0.5-0.5-0.5s-0.5,0.223877-0.5,0.5v8.5c0.0032349,2.7600708,2.2399292,4.9967651,5,5h12.5c0.276123,0,0.5-0.223877,0.5-0.5S17.7839355,22.9736328,17.5078125,22.9736328z M21.0078125,3.9736328h-14c-1.6561279,0.0018311-2.9981689,1.3438721-3,3v10c0.0018311,1.6561279,1.3438721,2.9981689,3,3h14c1.6561279-0.0018311,2.9981689-1.3438721,3-3v-10C24.0059814,5.3175049,22.6639404,3.9754639,21.0078125,3.9736328z M7.0078125,4.9736328h14c0.3700562,0.0004883,0.7122192,0.1081543,1.0094604,0.2835693l-6.9489136,6.9489136c-0.5864868,0.5839844-1.534668,0.5839844-2.1210938,0L5.9985962,5.256958C6.2957764,5.081665,6.6378784,4.9740601,7.0078125,4.9736328z M23.0078125,16.9736328c-0.0014038,1.1039429-0.8959961,1.9985352-2,2h-14c-1.1040649-0.0012817-1.9987183-0.8959351-2-2v-10c0.0004272-0.3701782,0.1082153-0.7124634,0.2836914-1.0097656l6.9487305,6.9492188c0.4683838,0.4692993,1.1045532,0.7325439,1.7675781,0.7314453c0.6630249,0.0010986,1.2991333-0.262146,1.7675781-0.7314453l6.9488525-6.9489136c0.175415,0.2972412,0.2830811,0.6394043,0.2835693,1.0094604V16.9736328z"/></svg>
+                                                        </div>
+                                                        <div>
+                                                            <span class="notification-label mb-1">New Mail Received</span>
+                                                            <span class="notification-subtext text-muted">1 week ago</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="cart.html">
+                                                    <div class="notification-each d-flex">
+                                                        <div class="me-3 notifyimg  bg-info brround">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M19.5,7H16V5.9169922c0-2.2091064-1.7908325-4-4-4s-4,1.7908936-4,4V7H4.5C4.4998169,7,4.4996338,7,4.4993896,7C4.2234497,7.0001831,3.9998169,7.223999,4,7.5V19c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7.5c0-0.0001831,0-0.0003662,0-0.0006104C19.9998169,7.2234497,19.776001,6.9998169,19.5,7z M9,5.9169922c0-1.6568604,1.3431396-3,3-3s3,1.3431396,3,3V7H9V5.9169922z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V8h3v2.5C8,10.776123,8.223877,11,8.5,11S9,10.776123,9,10.5V8h6v2.5c0,0.0001831,0,0.0003662,0,0.0005493C15.0001831,10.7765503,15.223999,11.0001831,15.5,11c0.0001831,0,0.0003662,0,0.0006104,0C15.7765503,10.9998169,16.0001831,10.776001,16,10.5V8h3V19z"/></svg>
+                                                        </div>
+                                                        <div>
+                                                            <span class="notification-label mb-1">New Order Received</span>
+                                                            <span class="notification-subtext text-muted">1 day ago</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="blog-details.html">
+                                                    <div class="notification-each d-flex">
+                                                        <div class="me-3 notifyimg  bg-warning brround">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M8,13c-0.276123,0-0.5,0.223877-0.5,0.5v2c0,0.0001831,0,0.0003662,0,0.0005493C7.5001831,15.7765503,7.723999,16.0001831,8,16c0.0001831,0,0.0003662,0,0.0006104,0C8.2765503,15.9998169,8.5001831,15.776001,8.5,15.5v-2C8.5,13.223877,8.276123,13,8,13z M12,10c-0.276123,0-0.5,0.223877-0.5,0.5v5c0,0.0001831,0,0.0003662,0,0.0005493C11.5001831,15.7765503,11.723999,16.0001831,12,16c0.0001831,0,0.0003662,0,0.0006104,0c0.2759399-0.0001831,0.4995728-0.223999,0.4993896-0.5v-5C12.5,10.223877,12.276123,10,12,10z M19.4152832,5.2902832c-3.7055054-4.09552-10.02948-4.4117432-14.125-0.7062988c-4.09552,3.7055054-4.4117432,10.02948-0.7062988,14.125l-2.4375,2.4375c-0.09375,0.09375-0.1464233,0.2208862-0.1464233,0.3534546C2,21.776062,2.223877,21.999939,2.5,22H12c2.4794312-0.000061,4.8704224-0.9212646,6.7089844-2.5847168C22.8045654,15.7097778,23.1207275,9.3858032,19.4152832,5.2902832z M12,21H3.7069702l1.928772-1.9287109c0.000061-0.000061,0.0001221-0.0001221,0.0001221-0.0001831c0.1951904-0.1952515,0.1951294-0.5117188-0.0001221-0.7068481C3.9483643,16.6768799,3.0002441,14.3883667,3,12.0020142c-0.0005493-4.9700317,4.0279541-8.9994507,8.9979858-9c4.9699707-0.0005493,8.9994507,4.0279541,9,8.9979858C20.9985352,16.9699707,16.9700317,20.9994507,12,21z M16,8c-0.276123,0-0.5,0.223877-0.5,0.5v7c0,0.0001831,0,0.0003662,0,0.0005493C15.5001831,15.7765503,15.723999,16.0001831,16,16c0.0001831,0,0.0003662,0,0.0006104,0c0.2759399-0.0001831,0.4995728-0.223999,0.4993896-0.5v-7C16.5,8.223877,16.276123,8,16,8z"/></svg>
+                                                        </div>
+                                                        <div>
+                                                            <span class="notification-label mb-1">New Comment Received</span>
+                                                            <span class="notification-subtext text-muted">1 day ago</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-divider m-0"></div>
                                             <div class="text-center p-3">
@@ -285,8 +372,6 @@
 
                                         <g:link controller="projecto" action="create" class="sub-slide-item">Criar Novo Projeto</g:link>
 
-                                        <g:link controller="projecto" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
-
                                     </ul>
                                 </li>
 
@@ -298,8 +383,6 @@
                                     <ul class="sub-slide-menu">
 
                                         <g:link controller="tarefa" action="index" class="sub-slide-item">Lista de Tarefas</g:link>
-
-                                        <g:link controller="tarefa" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                         <g:link controller="tarefa" action="create" class="sub-slide-item">Criar Tarefa</g:link>
 
@@ -328,13 +411,13 @@
                     <!-- PAGE-HEADER -->
                     <div class="page-header">
                         <div>
-                            <h1 class="page-title">Editar tarefa</h1>
+                            <h1 class="page-title">Criar tarefa</h1>
                         </div>
                         <div class="ms-auto pageheader-btn">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">Aplicativos</li>
                                 <li class="breadcrumb-item"><a href="javascript:void(0);">Tarefas</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Editar Tarefas</li>
+                                <li class="breadcrumb-item active" aria-current="page">Criar  Tarefas</li>
                             </ol>
                         </div>
                     </div>
@@ -353,7 +436,7 @@
                                             <div class="form-group">
                                                 <label class="form-label text-muted">Título:</label>
                                                 <div class="input-group" id="task-name">
-                                                    <input type="text" class="form-control text-dark" placeholder="Insira sua tarefa" value="">
+                                                    <input type="text" class="form-control text-dark" placeholder="Insira sua tarefa"  name="tarefa" value="">
                                                 </div>
                                             </div>
                                         </div>
@@ -361,7 +444,7 @@
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label class="form-label text-muted">Categoria de tarefa:</label>
-                                                    <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" id="task-category" data-placeholder="Choose Category..." tabindex="-1" aria-hidden="true">
+                                                    <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" name="categoria" id="task-category" data-placeholder="Choose Category..." tabindex="-1" aria-hidden="true">
                                                         <option label="Choose one"></option>
                                                         <option value="empty" selected>---</option>
                                                         <option value="sample">Relatorio</option>
@@ -375,9 +458,9 @@
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label class="form-label text-muted">Projeto:</label>
-                                                    <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" id="project-name1" data-placeholder="Choose Project..." tabindex="-1" aria-hidden="true">
+                                                    <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark"  name="projeto" id="project-name1" data-placeholder="Choose Project..." tabindex="-1" aria-hidden="true">
                                                         <option label="Choose one"></option>
-                                                        <option value="empty">---</option>
+                                                        <option value="vazio">---</option>
                                                         <option value="sample" selected>CMAM</option>
                                                         <option value="sample">GIT</option>
                                                     </select>
@@ -387,9 +470,9 @@
                                         <div class="col-sm-12 col-md-12 col-xl-4">
                                             <div class="form-group">
                                                 <label class="form-label text-muted">Data de início:</label>
-                                                <div id="date1-datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                                <div id="date1-datepicker" class="input-group date" data-date-format="dd-mm-yyyy" >
                                                     <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
-                                                    <input class="form-control task-start-date" type="text" placeholder="Select Start Date"/>
+                                                    <input class="form-control task-start-date" type="text" placeholder="Select Start Date" name="dataE"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -398,7 +481,7 @@
                                                 <label class="form-label text-muted">Data de Fim:</label>
                                                 <div id="date2-datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
                                                     <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
-                                                    <input class="form-control" type="text" placeholder="Select End Date"/>
+                                                    <input class="form-control" type="text" placeholder="Select End Date" name="dataS"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -415,7 +498,7 @@
                                             <div class="form-group">
                                                 <ul>
                                                     <li class="select-client">
-                                                        <select multiple="multiple" class="form-control select2-client-search">
+                                                        <select multiple="multiple" class="form-control select2-client-search" name="colaborador">
                                                             <option value="1">Sydney Madope</option>
                                                             <option value="2">Dercio Pale</option>
                                                             <option value="13">Firmino Massango</option>
@@ -428,7 +511,7 @@
                                         <div class="col-sm-12 col-md-12 col-xl-12">
                                             <label class="form-label text-muted">Descrição:</label>
                                             <div class="form-group">
-                                                <div id="summernote"><p>Fazer um relatorio que.......</p></div>
+                                                <div id="summernote" name="descricao"><p>Fazer um relatorio que.......</p></div>
                                             </div>
                                         </div>
                                     </div>
@@ -441,11 +524,11 @@
                                                         <label class="form-label text-muted">Status da tarefa: </label>
                                                         <ul>
                                                             <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Selecione o status">
+                                                                <select class="form-control select2-status-search" data-placeholder="Selecione o status" name="status">
                                                                     <option value="empty">---</option>
-                                                                    <option value="IP" selected>Em andamento</option>
-                                                                    <option value="OH">Em espera</option>
-                                                                    <option value="CP">Concluída</option>
+                                                                    <option value="andamento" selected>Em andamento</option>
+                                                                    <option value="espera">Em espera</option>
+                                                                    <option value="concluida">Concluída</option>
                                                                 </select>
                                                             </li>
                                                         </ul>
@@ -455,11 +538,11 @@
                                                     <div class="form-group">
                                                         <label class="form-label text-muted">Prioridade:</label>
                                                         <div class="input-group">
-                                                            <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" id="currency-type" data-placeholder="Choose Type..." tabindex="-1" aria-hidden="true">
+                                                            <select class="form-control select2-show-search form-select select2-hidden-accessible text-dark" name="prioridade" id="currency-type" data-placeholder="Choose Type..." tabindex="-1" aria-hidden="true">
                                                                 <option label="Choose one"></option>
                                                                 <option value="empty">---</option>
-                                                                <option value="high" selected>Alta</option>
-                                                                <option value="low">Baixo</option>
+                                                                <option value="alta" selected>Alta</option>
+                                                                <option value="baixo">Baixo</option>
                                                                 <option value="normal">Normal</option>
                                                             </select>
                                                         </div>
@@ -488,7 +571,7 @@
                                                             <div class="form-group">
                                                                 <label class="form-label text-muted">Subtarefa:</label>
                                                                 <div class="input-group" id="project-name">
-                                                                    <input type="text" class="form-control text-dark" placeholder="Insira a subtarefa" value="">
+                                                                    <input type="text" class="form-control text-dark" placeholder="Insira a subtarefa"  name="subTarefa" value="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -497,7 +580,7 @@
                                                                 <label class="form-label text-muted">Data final:</label>
                                                                 <div id="date3-datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
                                                                     <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
-                                                                    <input class="form-control" type="text" placeholder="Selecione a data de término"/>
+                                                                    <input class="form-control" type="text" placeholder="Selecione a data de término" name="dataFimSubtarefa "/>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -513,7 +596,7 @@
                                                             <label class="form-label text-muted">Adicionar arquivos:</label>
                                                             <div class="form-group">
                                                                 <form method="post">
-                                                                    <input type="file" class="dropify" data-bs-height="100" />
+                                                                    <input type="file" class="dropify" data-bs-height="100" name="ficheiro" />
                                                                 </form>
                                                             </div>
                                                         </div>
@@ -524,11 +607,13 @@
                                     </div>
                                     <div class="row p-5">
                                         <div class="btn-list text-end">
-                                            <button class="btn btn-outline-danger">
+
+                                            <button class="btn btn-outline-danger" type="submit">
                                                 <i class="fe fe-x-circle"></i>
                                                 Cancelar
                                             </button>
-                                            <button class="btn btn-primary">
+
+                                            <button class="btn btn-primary" type="submit">
                                                 <i class="fe fe-check-circle"></i>
                                                 Salvar
                                             </button>
@@ -573,12 +658,12 @@
 
 <!-- INTERNAL SELECT2 JS -->
 <asset:javascript src="select2/select2.full.min.js"/>
+
 <!-- SIDE-MENU JS-->
 <asset:javascript src="plugins/sidemenu/sidemenu.js"/>
 
 <!-- Perfect SCROLLBAR JS-->
 <asset:javascript src="plugins/p-scroll/perfect-scrollbar.js"/>
-
 <asset:javascript src="plugins/p-scroll/pscroll.js"/>
 
 <!-- bootstrap-datepicker js -->
@@ -609,4 +694,3 @@
 
 </body>
 </html>
-

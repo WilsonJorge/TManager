@@ -4,7 +4,6 @@
 
     </head>
     <body>
-        %{--<a href="#create-projecto" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>--}%
 
         <div id="create-projecto" class="content scaffold-create" role="main">
             <g:if test="${flash.message}">

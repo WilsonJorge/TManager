@@ -200,9 +200,6 @@
                                     <div class="dropdown d-md-flex profile-1">
                                         <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex animate">
                                             <span>
-                                                %{--<img src="/assets/images/faces/6.jpg" alt="profile-user"--}%
-                                                     %{--class="avatar  profile-user brround cover-image">--}%
-
                                                 <asset:image src="images/faces/6.jpg"/>
                                             </span>
                                             <div class="text-center p-1 d-flex d-lg-none-max">
@@ -312,15 +309,11 @@
                                             class="sub-side-menu__label">Projectos</span><i
                                             class="sub-angle fa fa-angle-right"></i></a>
                                     <ul class="sub-slide-menu">
-                                        <g:link controller="projecto" action="#" class="sub-slide-item">Projetos</g:link>
+                                        <g:link controller="projecto" action="project" class="sub-slide-item">Projetos</g:link>
 
                                         <g:link controller="projecto" action="index" class="sub-slide-item">Lista de Projetos</g:link>
 
-                                        <g:link controller="projecto" action="" class="sub-slide-item">Detalhes do Projeto</g:link>
-
                                         <g:link controller="projecto" action="create" class="sub-slide-item">Criar Novo Projeto</g:link>
-
-                                        <g:link controller="projecto" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                     </ul>
                                 </li>
@@ -333,8 +326,6 @@
                                     <ul class="sub-slide-menu">
 
                                         <g:link controller="tarefa" action="index" class="sub-slide-item">Lista de Tarefas</g:link>
-
-                                        <g:link controller="tarefa" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                         <g:link controller="tarefa" action="create" class="sub-slide-item">Criar Tarefa</g:link>
 
@@ -585,7 +576,6 @@
 
 <asset:javascript src="bootstrap.min.js"/>
 
-
 <!-- INTERNAL SELECT2 JS -->
 <asset:javascript src="select2/select2.full.min.js"/>
 
@@ -594,6 +584,7 @@
 
 <!-- Perfect SCROLLBAR JS-->
 <asset:javascript src="plugins/p-scroll/perfect-scrollbar.js"/>
+
 <asset:javascript src="plugins/p-scroll/pscroll.js"/>
 
 <!-- bootstrap-datepicker js -->
@@ -607,19 +598,19 @@
 
 <!-- FILE UPLOAD JS -->
 <asset:javascript src="plugins/fileuploads/js/fileupload.js"/>
-%{--<script src="../assets/plugins/fileuploads/js/file-upload.js"></script>--}%
+
 <asset:javascript src="plugins/fileuploads/js/file-upload.js"/>
 <!-- TASK EDIT JS-->
-%{--<script src="../assets/js/task-edit.js"></script>--}%
+
 <asset:javascript src="task-edit.js"/>
 <!-- STICKY JS -->
-%{--<script src="../assets/js/sticky.js"></script>--}%
+
 <asset:javascript src="sticky.js"/>
 <!-- COLOR THEME JS -->
-%{--<script src="../assets/js/themeColors.js"></script>--}%
+
 <asset:javascript src="themeColors.js"/>
 <!-- CUSTOM JS -->
-%{--<script src="../assets/js/custom.js"></script>--}%
+
 <asset:javascript src="custom.js"/>
 
 <!-- INVOICE CREATE JS-->
@@ -629,31 +620,3 @@
 </html>
 
 
-%{--<!DOCTYPE html>--}%
-%{--<html>--}%
-%{--<head>--}%
-%{--<meta name="layout" content="main" />--}%
-%{--<g:set var="entityName" value="${message(code: 'projecto.label', default: 'Projecto')}" />--}%
-%{--<title><g:message code="default.list.label" args="[entityName]" /></title>--}%
-%{--</head>--}%
-%{--<body>--}%
-%{--<a href="#list-projecto" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>--}%
-%{--<div class="nav" role="navigation">--}%
-%{--<ul>--}%
-%{--<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>--}%
-%{--<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>--}%
-%{--</ul>--}%
-%{--</div>--}%
-%{--<div id="list-projecto" class="content scaffold-list" role="main">--}%
-%{--<h1><g:message code="default.list.label" args="[entityName]" /></h1>--}%
-%{--<g:if test="${flash.message}">--}%
-%{--<div class="message" role="status">${flash.message}</div>--}%
-%{--</g:if>--}%
-%{--<f:table collection="${projectoList}" />--}%
-
-%{--<div class="pagination">--}%
-%{--<g:paginate total="${projectoCount ?: 0}" />--}%
-%{--</div>--}%
-%{--</div>--}%
-%{--</body>--}%
-%{--</html>--}%
