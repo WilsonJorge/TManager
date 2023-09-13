@@ -285,7 +285,7 @@
                                 <li class="side-menu-label1"><a href="javascript:void(0)">Apps</a></li>
 
                                 <li class="sub-slide">
-                                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide"><span
+                                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><span
                                             class="sub-side-menu__label">Clientes</span><i
                                             class="sub-angle fa fa-angle-right"></i></a>
                                     <ul class="sub-slide-menu">
@@ -309,15 +309,11 @@
                                             class="sub-side-menu__label">Projectos</span><i
                                             class="sub-angle fa fa-angle-right"></i></a>
                                     <ul class="sub-slide-menu">
-                                        <g:link controller="projecto" action="#" class="sub-slide-item">Projetos</g:link>
+                                        <g:link controller="projecto" action="project" class="sub-slide-item">Projetos</g:link>
 
                                         <g:link controller="projecto" action="index" class="sub-slide-item">Lista de Projetos</g:link>
 
-                                        <g:link controller="projecto" action="" class="sub-slide-item">Detalhes do Projeto</g:link>
-
                                         <g:link controller="projecto" action="create" class="sub-slide-item">Criar Novo Projeto</g:link>
-
-                                        <g:link controller="projecto" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                     </ul>
                                 </li>
@@ -330,8 +326,6 @@
                                     <ul class="sub-slide-menu">
 
                                         <g:link controller="tarefa" action="index" class="sub-slide-item">Lista de Tarefas</g:link>
-
-                                        <g:link controller="tarefa" action="edittable" class="sub-slide-item">Editar Tarefa</g:link>
 
                                         <g:link controller="tarefa" action="create" class="sub-slide-item">Criar Tarefa</g:link>
 

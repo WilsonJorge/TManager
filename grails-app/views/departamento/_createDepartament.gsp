@@ -269,7 +269,7 @@
                             </a>
                             <ul class="slide-menu">
                                 <li class="side-menu-label1"><a href="javascript:void(0)">Register</a></li>
-                                <g:link controller="departamento" action="create" class="slide-item">Registar Departamento</g:link>
+                                <g:link class="slide-item">Registar Departamento</g:link>
                                 <g:link class="slide-item">Registar Categoria</g:link>
                                 <g:link class="slide-item">Lista de Departamento</g:link>
                                 <g:link class="slide-item">Lista de Categoria</g:link>
@@ -347,276 +347,334 @@
             <div class="side-app">
                 <!-- CONTAINER -->
                 <div class="main-container container-fluid">
+
                     <!-- PAGE-HEADER -->
                     <div class="page-header">
                         <div>
-                            <h1 class="page-title">Lista de Tarefas</h1>
+                            <h1 class="page-title">Departamento</h1>
                         </div>
                         <div class="ms-auto pageheader-btn">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item">Aplicativos</li>
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Tarefas</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Lista de Tarefas</li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Formulario</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Formulario do Departamento</li>
                             </ol>
                         </div>
                     </div>
                     <!-- PAGE-HEADER END -->
 
-                    <!--ROW OPENED-->
+                    <!-- row -->
                     <div class="row">
-                        <div class="col-md-12 col-xl-12">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Total Tarefas</h4>
-                                                    <p>35</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 bg-primary br-5 d-flex align-items-center justify-content-center ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Tarefas Finalizadas</h4>
-                                                    <p>15</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 br-5 d-flex align-items-center justify-content-center bg-secondary ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Em Progesso</h4>
-                                                    <p>4</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 br-5 d-flex align-items-center justify-content-center bg-info ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6 col-xl-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <h4>Em Espera</h4>
-                                                    <p>6</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="hpx-50 wpx-50 br-5 d-flex align-items-center justify-content-center bg-warning ms-auto">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M17,4h-1.1846313C15.4013672,2.8383179,14.3035889,2.0014648,13,2h-2C9.6964111,2.0014648,8.5986328,2.8383179,8.1846313,4H7C5.3438721,4.0018311,4.0018311,5.3438721,4,7v12c0.0018311,1.6561279,1.3438721,2.9981689,3,3h10c1.6561279-0.0018311,2.9981689-1.3438721,3-3V7C19.9981689,5.3438721,18.6561279,4.0018311,17,4z M9,5c0.0014038-1.1040039,0.8959961-1.9985962,2-2h2c1.1040039,0.0014038,1.9985962,0.8959961,2,2v2H9V5z M19,19c-0.0014038,1.1040039-0.8959961,1.9985962-2,2H7c-1.1040039-0.0014038-1.9985962-0.8959961-2-2V7c0.0014038-1.1040039,0.8959961-1.9985962,2-2h1v2.5006104C8.0001831,7.7765503,8.223999,8.0001831,8.5,8h7.0006104C15.7765503,7.9998169,16.0001831,7.776001,16,7.5V5h1c1.1040039,0.0014038,1.9985962,0.8959961,2,2V19z"/></svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 mb-3">
-                            <div class="btn-list">
-
-                                    <g:link controller="tarefa" action="create" class="btn btn-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn text-white" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M16,11.5h-3.5V8c0-0.276123-0.223877-0.5-0.5-0.5S11.5,7.723877,11.5,8v3.5H8c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h3.5v3.5005493C11.5001831,16.2765503,11.723999,16.5001831,12,16.5h0.0006104C12.2765503,16.4998169,12.5001831,16.276001,12.5,16v-3.5H16c0.276123,0,0.5-0.223877,0.5-0.5S16.276123,11.5,16,11.5z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5202026-0.0062866,9.9937134-4.4797974,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9682617,0.0056152,8.9943848,4.0317383,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                        Nova Tarefa
-                                    </g:link>
-
-                                    <g:link controller="tarefa" action="edittable" class="btn btn-info">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn text-white" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M21.5,21h-19C2.223877,21,2,21.223877,2,21.5S2.223877,22,2.5,22h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,21,21.5,21z M4.5,18.0888672h5c0.1326294,0,0.2597656-0.0527344,0.3534546-0.1465454l10-10c0.000061,0,0.0001221-0.000061,0.0001831-0.0001221c0.1951294-0.1952515,0.1950684-0.5117188-0.0001831-0.7068481l-5-5c0-0.000061-0.000061-0.0001221-0.0001221-0.0001221c-0.1951904-0.1951904-0.5117188-0.1951294-0.7068481,0.0001221l-10,10C4.0526733,12.3291016,4,12.4562378,4,12.5888672v5c0,0.0001831,0,0.0003662,0,0.0005493C4.0001831,17.8654175,4.223999,18.0890503,4.5,18.0888672z M14.5,3.2958984l4.2930298,4.2929688l-2.121582,2.121582l-4.2926025-4.293396L14.5,3.2958984z M5,12.7958984l6.671814-6.671814l4.2926025,4.293396l-6.6713867,6.6713867H5V12.7958984z"/></svg>
-                                        Editar Tarefa
-                                    </g:link>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
+                        <div class="col-lg-12 col-md-12">
                             <div class="card">
-                                <div class="card-body tasks-table-container">
-                                    <div class="table-responsive">
-                                        <table id="tasks-table" class="table text-nowrap mb-0 table-bordered border-top border-bottom">
-                                            <thead class="table-head">
-                                            <tr>
-                                                <th class="bg-transparent border-bottom-0 w-5">Num</th>
-                                                <th class="bg-transparent border-bottom-0">Tarefa</th>
-                                                <th class="bg-transparent border-bottom-0">Projeto</th>
-                                                <th class="bg-transparent border-bottom-0">Data de vencimento</th>
-                                                <th class="bg-transparent border-bottom-0">Atribuído a</th>
-                                                <th class="bg-transparent border-bottom-0">Status</th>
-                                                <th class="bg-transparent border-bottom-0 no-btn">Ação</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody class="table-body">
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold text-center">01.</td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark" data-bs-target="#Vertically" data-bs-toggle="modal" >Plano Semanal de Entradas</a></td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark">CMAM</a></td>
-                                                <td class="text-danger fs-15 fw-semibold">25 Agosto 2023</td>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="me-2">
-                                                            <span class="data-image avatar avatar-md rounded-circle" style="background-image: url(../assets/images/users/8.jpg)"></span>
-                                                        </div>
-                                                        <div>
-                                                            <h6 class="mb-0">Sydney Madope</h6>
-                                                            <span class="text-muted fs-12">smadope@intellica.co.mz</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group mb-0">
-                                                        <ul>
-                                                            <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Select Status">
-                                                                    <option value="IP" selected>Em Progreso</option>
-                                                                    <option value="OH">Em Espera</option>
-                                                                    <option value="CP">Finalizado</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-outline-primary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Mark As Completed">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-outline-secondary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Editar</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i> Informações</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold text-center">02.</td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark" data-bs-target="#Vertically" data-bs-toggle="modal" >Dicionario de Dados</a></td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark">CMAM</a></td>
-                                                <td class="text-danger fs-15 fw-semibold">25 Agosto 2023</td>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="me-2">
-                                                            <span class="data-image avatar avatar-md rounded-circle" style="background-image: url(../assets/images/users/12.jpg)"></span>
-                                                        </div>
-                                                        <div>
-                                                            <h6 class="mb-0">Dercio Pale</h6>
-                                                            <span class="text-muted fs-12">dpale@intellica.co.mz</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group mb-0">
-                                                        <ul>
-                                                            <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Select Status">
-                                                                    <option value="IP">Em Progesso</option>
-                                                                    <option value="OH" selected>Em Esperea</option>
-                                                                    <option value="CP">Finalizado</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-outline-primary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Mark As Completed">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-outline-secondary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Editar</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i> Informações</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold text-center">03.</td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="#" class="text-dark" data-bs-target="#Vertically" data-bs-toggle="modal" >Plano de Acao do Git.</a></td>
-                                                <td class="text-muted fs-15 fw-semibold"><a href="project-details.html" class="text-dark">GIT</a></td>
-                                                <td class="text-danger fs-15 fw-semibold">23 Agosto 2023</td>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="me-2">
-                                                            <span class="data-image avatar avatar-md rounded-circle" style="background-image: url(../assets/images/users/13.jpg)"></span>
-                                                        </div>
-                                                        <div>
-                                                            <h6 class="mb-0">Firmino Massango</h6>
-                                                            <span class="text-muted fs-12">fmassango@intellica.co.mz</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group mb-0">
-                                                        <ul>
-                                                            <li class="select-status">
-                                                                <select class="form-control select2-status-search" data-placeholder="Select Status">
-                                                                    <option value="IP">Em Progesso</option>
-                                                                    <option value="OH" >Em Espera</option>
-                                                                    <option value="CP" selected>Finalizado</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-outline-primary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Mark As Completed">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-outline-secondary border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Editar</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i>Informações </a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Horional Alignment</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">It is Very Easy to Customize and it uses in your website apllication.</p>
+                                    <div class="row">
+                                        <div class="col-md-5 mb-3">
+                                            <input class="form-control" placeholder="Enter your username" type="text">
+                                        </div>
+                                        <div class="col-md-5 mb-3">
+                                            <input class="form-control" placeholder="Enter your password" type="password">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button class="btn btn-primary btn-block">Sign In</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Vertical Alignement</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">It is Very Easy to Customize and it uses in your website apllication.</p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="p-2">
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Enter your username" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Enter your password" type="password">
+                                                </div>
+                                                <button class="btn btn-primary">Sign In</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--ROW CLOSED-->
+                    <!-- /row -->
+
+                    <!-- row -->
+                    <div class="row row-deck">
+                        <div class="col-lg-6 col-md-">
+                            <div class="card custom-card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Basic Example</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">A form control layout using basic layout.</p>
+                                    <div class="d-flex flex-column">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Enter your username" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Enter Your Email" type="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input class="form-control" id="passwordElement" placeholder="Enter Your Password" type="password">
+                                                <button class="input-group-text btn btn-primary text-white" id="showBtn">
+                                                    <i class="fe fe-eye text-white" id="eyeOpen"></i>
+                                                    <i class="fe fe-eye-off text-white d-none" id="eyeClose"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="ckbox">
+                                                <input type="checkbox"><span class="text-13">I agree terms and conditions</span>
+                                            </label>
+                                        </div>
+                                        <button class="btn ripple btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Left Label Alignment</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">It is Very Easy to Customize and it uses in your website apllication.</p>
+                                    <form class="form-horizontal">
+                                        <div class="row mb-4">
+                                            <label for="firstName" class="col-md-3 form-label">Firstname</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control" id="firstName" placeholder="Enter your firstname" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="lastName" class="col-md-3 form-label">Lastnane</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control" id="lastName" placeholder="Enter your lastname" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="email" class="col-md-3 form-label">Email</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control" id="email" placeholder="Enter your email" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="ckbox">
+                                                    <input type="checkbox"><span class="text-13">I agree terms and conditions</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Form Group Wrapper</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">It is Very Easy to Customize and it uses in your website apllication.</p>
+                                    <div class="row row-xs form-group-wrapper">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="main-form-group">
+                                                <input class="form-control border-0" id="email-1" placeholder="email" type="email">
+                                                <label for="email-1" class="form-label mb-1">Email</label>
+                                            </div><!-- main-form-group -->
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="main-form-group">
+                                                <input class="form-control border-0" id="password-1" placeholder="password" type="password">
+                                                <label for="password-1" class="form-label mb-1">Password</label>
+                                            </div><!-- main-form-group -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Form in Dropdown</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">It is Very Easy to Customize and it uses in your website apllication.</p>
+                                    <div class="main-dropdown-form-demo">
+                                        <button class="btn btn-primary" data-bs-toggle="dropdown">Live Example <i class="icon ion-ios-arrow-down text-12"></i></button>
+                                        <div class="dropdown-menu">
+                                            <h4 class="dropdown-title">Subscribe</h4>
+                                            <p>Don't miss any update from us.</p>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Enter your fullname" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Enter your email" type="email">
+                                            </div><button class="btn btn-primary btn-block">Subscribe</button>
+                                        </div>
+                                    </div><!-- main-dropdown-demo -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Form in Modal</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">It is Very Easy to Customize and it uses in your website apllication.</p>
+                                    <a href="#" class="btn btn-primary" data-bs-target="#modaldemo1" data-bs-toggle="modal">View Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h3 class="card-title">Payment Details</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-10 col-lg-8 col-xl-6 mx-auto d-block">
+                                            <div class="card card-body pd-20 pd-md-40 border shadow-none">
+                                                <h4 class="card-title">Your Payment Details</h4>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="card-name">Name on Card</label>
+                                                    <input class="form-control" id="card-name" type="text" placeholder="Enter Your Name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label" for="ssnMask-card">Card Number</label>
+                                                    <div class="main-parent">
+                                                        <input class="form-control" id="ssnMask-card" placeholder="xxxx - xxxx - xxxx" type="text" required>
+                                                        <div class="d-flex main-child">
+                                                            <img alt="visa" src="../assets/images/pngs/visa.png">
+                                                            <img alt="mastercard" src="../assets/images/pngs/mastercard.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row row-sm">
+                                                        <div class="col-sm-9">
+                                                            <label class="form-label">Expiration Date</label>
+                                                            <div class="row row-sm">
+                                                                <div class="col-sm-7 mb-3">
+                                                                    <select class="form-control select2 form-select" data-placeholder="month">
+                                                                        <option label="Choose one"></option>
+                                                                        <option value="January">January</option>
+                                                                        <option value="February">February</option>
+                                                                        <option value="March">March</option>
+                                                                        <option value="April">April</option>
+                                                                        <option value="May">May</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-5 mb-3">
+                                                                    <select class="form-control select2 form-select" data-placeholder="year">
+                                                                        <option label="Choose one"></option>
+                                                                        <option value="2018">2018</option>
+                                                                        <option value="2019">2019</option>
+                                                                        <option value="2020">2020</option>
+                                                                        <option value="2021">2021</option>
+                                                                        <option value="2022">2022</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label class="form-label" for="ssnMask-cvv">CVV</label>
+                                                            <input class="form-control" id="ssnMask-cvv" placeholder="xxx" type="text" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="ckbox"><input checked type="checkbox">
+                                                        <span>Save my card for future purchases</span>
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-primary btn-block">Complete Payment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
 
                 </div>
             </div>
         </div>
         <!-- CONTAINER CLOSED -->
     </div>
+
+
+    <!-- modal -->
+    <div id="modaldemo1" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title mb-2">Create New Account</h4>
+                    <p class="text-muted">Let's get you all setup so you can begin using our app.</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Firstname">
+                    </div><!-- form-group -->
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Lastname">
+                    </div><!-- form-group -->
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div><!-- form-group -->
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div><!-- form-group -->
+                    <div class="form-group">
+                        <label class="ckbox mb-3">
+                            <input type="checkbox">
+                            <span class="text-13">I agree to <a href="javascript:void(0)">Terms</a> and <a href="javascript:void(0)">Privacy Policy</a></span>
+                        </label>
+                        <label class="ckbox">
+                            <input type="checkbox" checked>
+                            <span class="text-13">Yes, I want to receive email from your newsletter.</span>
+                        </label>
+                    </div><!-- form-group -->
+                    <button class="btn btn-primary btn-block mt-5">Continue</button>
+                </div><!-- modal-body -->
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -637,41 +695,39 @@
 
 <!-- JQUERY JS -->
 <asset:javascript src="jquery.min.js"/>
-
 <!-- BOOTSTRAP JS -->
-<asset:javascript src="popper.min.js"/>
-
-<asset:javascript src="bootstrap.min.js"/>
-
-<!-- SIDE-MENU JS-->
-<asset:javascript src="plugins/sidemenu/sidemenu.js"/>
-
-<!-- INTERNAL SELECT2 JS -->
-<asset:javascript src="select2/select2.full.min.js"/>
-<!-- INTERNAL DATA-TABLES JS-->
-
-<asset:javascript src="datatable/js/jquery.dataTables.min.js"/>
-
-<asset:javascript src="datatable/js/dataTables.bootstrap5.js"/>
-
-<asset:javascript src="datatable/dataTables.responsive.min.js"/>
-
-<!-- Perfect SCROLLBAR JS-->
-<asset:javascript src="plugins/p-scroll/perfect-scrollbar.js"/>
-<asset:javascript src="plugins/p-scroll/pscroll.js"/>
+<asset:javascript src="bootstrap/js/popper.min.js"/>
+<asset:javascript src="bootstrap/js/bootstrap.min.js"/>
 
 <!-- SELECT2 JS -->
-<asset:javascript src="plugins/select2/select2.full.min.js"/>
-<!-- TASKS LIST JS-->
-<asset:javascript src="tasks-list.js"/>
 
+<asset:javascript src="plugins/select2/select2.full.min.js"/>
+<!-- SIDE-MENU JS-->
+
+<asset:javascript src="plugins/sidemenu/sidemenu.js"/>
+<!-- Perfect SCROLLBAR JS-->
+
+<asset:javascript src="plugins/p-scroll/perfect-scrollbar.js"/>
+
+<asset:javascript src="plugins/p-scroll/pscroll.js"/>
+<!-- INPUT MASK JS-->
+<asset:javascript src="plugins/input-mask/jquery.mask.min.js"/>
+<!--Internal  jquery.maskedinput js -->
+<asset:javascript src="plugins/jquery.maskedinput/jquery.maskedinput.js"/>
+<!-- FORM ELEMENTS JS -->
+<asset:javascript src="form-layouts.js"/>
 <!-- STICKY JS -->
+
 <asset:javascript src="sticky.js"/>
 <!-- COLOR THEME JS -->
 
 <asset:javascript src="themeColors.js"/>
 <!-- CUSTOM JS -->
 <asset:javascript src="custom.js"/>
+
 </body>
+
 </html>
+
+
 
