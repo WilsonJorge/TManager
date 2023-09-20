@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 3007;
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('public'));
@@ -40,9 +40,14 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/project-new.html');
   });
 
-  // Rota para a página "task-edit.html"
-  app.get('/tasks-edit.html', (req, res) => {
-    res.sendFile(__dirname + '/views/tasks-edit.html');
+  // Rota para a página "clients.html"
+  app.get('/clients.html', (req, res) => {
+    res.sendFile(__dirname + '/views/clients.html');
+  });
+
+  // Rota para a página "client-create.html"
+  app.get('/client-create.html', (req, res) => {
+    res.sendFile(__dirname + '/views/client-create.html');
   });
 
 // Iniciar o servidor
