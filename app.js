@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3007;
+const port = process.env.PORT || 3009;
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('public'));
@@ -9,6 +9,11 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
   });
+
+  // Rota para renderizar o template Bootstrap
+app.get('/index.html', (req, res) => {
+  res.sendFile(__dirname + '/views/index.html');
+});
 
   // Rota para a página "task-create.html"
   app.get('/task-create.html', (req, res) => {
@@ -48,6 +53,11 @@ app.get('/', (req, res) => {
   // Rota para a página "client-create.html"
   app.get('/client-create.html', (req, res) => {
     res.sendFile(__dirname + '/views/client-create.html');
+  });
+
+  // Rota para a página "category-list.html"
+  app.get('/category-list.html', (req, res) => {
+    res.sendFile(__dirname + '/views/category-list.html');
   });
 
 // Iniciar o servidor
