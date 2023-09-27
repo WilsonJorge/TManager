@@ -1,72 +1,72 @@
+const Category = require('../models/category');
 
-const Category = require('../models/category'); // Importe o modelo de tarefa
-
-// Controlador para listar todas as tarefas
-async function getAllCategory(req, res) {
+// Controlador para listar todas as categorias
+async function getAllCategories(req, res) {
   try {
-    const categoryTask = await Category.select('*');
-    res.status(200).json(categoryTask);
+    const categories = await Category.getAll();
+    res.status(200).json(categories);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao buscar as categorias.' });
+    res.status(500).json({ error: 'Erro ao buscar categorias.' });
   }
 }
 
-// Controlador para criar uma nova Categoria
+// Controlador para buscar uma categoria por ID
+async function getCategoryById(req, res) {
+  const categoryId = req.params.id;
+
+  try {
+    const category = await Category.getById(categoryId);
+    res.status(200).json(category);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao buscar categoria por ID.' });
+  }
+}
+
+// Controlador para criar uma nova categoria
 async function createCategory(req, res) {
-  const { categoria, numerocategoria  } = req.body;
+  const { categoria, numerocategoria } = req.body;
 
   try {
-    const category = await Category.insert({ categoria, numerocategoria });
-    res.status(201).json(category);
+    const newCategory = await Category.create({ categoria, numerocategoria });
+    res.status(201).json(newCategory);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar Categoria de Tarefa tarefa.' });
+    res.status(500).json({ error: 'Erro ao criar categoria.' });
   }
 }
 
-// Controlador para atualizar uma Categoria
+// Controlador para atualizar uma categoria existente
 async function updateCategory(req, res) {
-    const categoryId = req.params.id; // Captura o ID da categoria a ser atualizada
-    const { categoria, numerocategoria } = req.body;
-  
-    try {
-      const updatedCategory = await Category.update(
-        { categoria, numerocategoria },
-        { id: categoryId }
-      );
-  
-      if (updatedCategory) {
-        res.status(200).json(updatedCategory);
-      } else {
-        res.status(404).json({ error: 'Categoria da Tarefa nao encontrado não encontrada.' });
-      }
-    } catch (error) {
-      res.status(500).json({ error: 'Erro ao atualizar Categoria de Tarefa.' });
-    }
-  }
+  const categoryId = req.params.id;
+  const { categoria, numerocategoria } = req.body;
 
-  // Controlador para excluir uma Categoria
+  try {
+    const updatedCategory = await Category.update({
+      id: categoryId,
+      categoria,
+      numerocategoria,
+    });
+    res.status(200).json(updatedCategory);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao atualizar categoria.' });
+  }
+}
+
+// Controlador para excluir uma categoria
 async function deleteCategory(req, res) {
-    const categoryId = req.params.id; // Captura o ID da categoria a ser excluída
-  
-    try {
-      const deletedCategory = await Category.remove({ id: categoryId });
-  
-      if (deletedCategory) {
-        res.status(204).end(); // Sem conteúdo (Categoria excluída com sucesso)
-      } else {
-        res.status(404).json({ error: 'Categoria não encontrada.' });
-      }
-    } catch (error) {
-      res.status(500).json({ error: 'Erro ao excluir Categoria de Tarefa.' });
-    }
-  }
-  
+  const categoryId = req.params.id;
 
+  try {
+    await Category.delete(categoryId);
+    res.status(204).send(); // 204 significa "No Content" (sem conteúdo)
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao excluir categoria.' });
+  }
+}
 
 module.exports = {
-    getAllCategory,
-    createCategory,
-    updateCategory,
-    deleteCategory
-  
+  getAllCategories,
+  getCategoryById,
+  createCategory,
+  updateCategory,
+  deleteCategory,
 };
