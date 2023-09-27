@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3004;
+const port = process.env.PORT || 3005;
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('public'));
@@ -84,6 +84,11 @@ app.get('/index.html', (req, res) => {
   app.get('/edit-departament.htmll', (req, res) => {
     res.sendFile(__dirname + '/views/edit-departament.html');
   });
+
+  //CONEXAO DE BASE DE DADOS
+    const { testDatabaseConnection } = require('./db');
+  // Chame a função para testar a conexão
+  testDatabaseConnection();
 
 // Iniciar o servidor
 app.listen(port, () => {
