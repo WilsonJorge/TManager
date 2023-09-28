@@ -1,21 +1,28 @@
-// routes/taskRoutes.js
-
+// Importe o Express
 const express = require('express');
+
+// Crie um roteador Express
 const router = express.Router();
-const departamentController = require('../controllers/departamentController.js');
 
-// Rota para listar todos os Departamentos
-router.get('/departament', departamentController.getAllDepartament);
+// Importe os controladores
+const departamentController = require('../controllers/departamentController');
 
-// Rota para criar um novo Departamento
-router.post('/departament', departamentController.createDepartament);
+// Rota para listar todas as categorias
+router.get('/', departamentController.getAllDepartament);
 
-// Rota para atualizar um Departamento específico por ID (usando PUT)
-router.put('/departament/:id', departamentController.updateDepartament);
+// Rota para buscar um departamento por ID
+router.get('/:id', departamentController.getDepartamentId);
 
-// Rota para excluir um Departamento específico por ID (usando DELETE)
-router.delete('/departament/:id', departamentController.deleteDepartament);
+// Rota para criar um novo departamento
+router.post('/', departamentController.createDepartament);
+
+// Rota para atualizar um departamento existente por ID
+router.put('/:id', departamentController.updateDepartament);
+
+// Rota para excluir um departamento por ID
+router.delete('/:id', departamentController.deleteDepartament);
 
 
-
+// Exporte o roteador
 module.exports = router;
+

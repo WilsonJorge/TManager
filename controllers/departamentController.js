@@ -1,72 +1,74 @@
-const Category = require('../models/category');
 
-// Controlador para listar todas as categorias
-async function getAllCategories(req, res) {
+const Departament = require('../models/departament');
+
+// Controlador para listar todos Departamentos
+async function getAllDepartament(req, res) {
   try {
-    const categories = await Category.getAll();
-    res.status(200).json(categories);
+    const departaments = await Departament.getAll();
+    res.status(200).json(departaments);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao buscar categorias.' });
+    res.status(500).json({ error: 'Erro ao buscar Departamentos.' });
   }
 }
 
-// Controlador para buscar uma categoria por ID
-async function getCategoryById(req, res) {
-  const categoryId = req.params.id;
+// Controlador para buscar um departamento por ID
+async function getDepartamentId(req, res) {
+  const departamentId = req.params.id;
 
   try {
-    const category = await Category.getById(categoryId);
-    res.status(200).json(category);
+    const departament = await Departament.getById(departamentId);
+    res.status(200).json(departament);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao buscar categoria por ID.' });
+    res.status(500).json({ error: 'Erro ao buscar Departamento por ID.' });
   }
 }
 
-// Controlador para criar uma nova categoria
-async function createCategory(req, res) {
-  const { categoria, numerocategoria } = req.body;
+// Controlador para criar um novo Departamento
+async function createDepartament(req, res) {
+  const { departamento, numeroColaboradores } = req.body;
 
   try {
-    const newCategory = await Category.create({ categoria, numerocategoria });
-    res.status(201).json(newCategory);
+    const newDepartament = await Category.create({ departamento, numeroColaboradores });
+    res.status(201).json(newDepartament);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar categoria.' });
+    res.status(500).json({ error: 'Erro ao criar Departamento.' });
   }
 }
 
-// Controlador para atualizar uma categoria existente
-async function updateCategory(req, res) {
-  const categoryId = req.params.id;
-  const { categoria, numerocategoria } = req.body;
+// Controlador para atualizar um Departamento existente
+async function updateDepartament(req, res) {
+  const departamentId = req.params.id;
+  const { departamento, numeroColaboradores } = req.body;
 
   try {
-    const updatedCategory = await Category.update({
-      id: categoryId,
-      categoria,
-      numerocategoria,
+    const updatedDepartament = await Departament.update({
+      id: departamentId,
+      departamento,
+      numeroColaboradores,
     });
-    res.status(200).json(updatedCategory);
+    res.status(200).json(updatedDepartament);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao atualizar categoria.' });
+    res.status(500).json({ error: 'Erro ao atualizar Departamento.' });
   }
 }
 
-// Controlador para excluir uma categoria
-async function deleteCategory(req, res) {
-  const categoryId = req.params.id;
+// Controlador para excluir um Departamento
+async function deleteDepartament(req, res) {
+  const departamentId = req.params.id;
 
   try {
-    await Category.delete(categoryId);
+    await Departament.delete(departamentId);
     res.status(204).send(); // 204 significa "No Content" (sem conteúdo)
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao excluir categoria.' });
+    res.status(500).json({ error: 'Erro ao excluir departamento.' });
   }
 }
 
 module.exports = {
-  getAllCategories,
-  getCategoryById,
-  createCategory,
-  updateCategory,
-  deleteCategory,
+  getAllDepartament,
+  getDepartamentId,
+  createDepartament,
+  updateDepartament,
+  deleteDepartament,
 };
+

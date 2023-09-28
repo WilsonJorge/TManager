@@ -10,7 +10,7 @@ async function testDatabaseConnection() {
     console.error('Erro ao conectar ao banco de dados PostgreSQL:', error);
   } finally {
     // Certifique-se de que a conexão seja sempre liberada, independentemente de ter sido bem-sucedida ou não.
-    db.end();
+    // db.end();
   }
 }
 

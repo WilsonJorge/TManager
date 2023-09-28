@@ -1,21 +1,28 @@
-// routes/taskRoutes.js
-
+// Importe o Express
 const express = require('express');
+
+// Crie um roteador Express
 const router = express.Router();
-const categoryController = require('../controllers/categoryController.js');
+
+// Importe os controladores
+const categoryController = require('../controllers/categoryController');
 
 // Rota para listar todas as categorias
-router.get('/category', categoryController.getAllCategory);
+router.get('/', categoryController.getAllCategories);
+
+// Rota para buscar uma categoria por ID
+router.get('/:id', categoryController.getCategoryById);
 
 // Rota para criar uma nova categoria
-router.post('/category', categoryController.createCategory);
+router.post('/', categoryController.createCategory);
 
-// Rota para atualizar uma tarefa específica por ID (usando PUT)
-router.put('/category/:id', categoryController.updateCategory);
+// Rota para atualizar uma categoria existente por ID
+router.put('/:id', categoryController.updateCategory);
 
-// Rota para excluir uma tarefa específica por ID (usando DELETE)
-router.delete('/category/:id', categoryController.deleteCategory);
+// Rota para excluir uma categoria por ID
+router.delete('/:id', categoryController.deleteCategory);
 
 
-
+// Exporte o roteador
 module.exports = router;
+
