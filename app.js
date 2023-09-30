@@ -1,6 +1,9 @@
+
+
+
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3009;
+const port = process.env.PORT || 3004;
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('public'));
@@ -108,6 +111,8 @@ app.use((req, res, next) => {
 });
 // Use outros caminhos e rotas, se aplicável
 
+app.use(express.json()); // 
+app.use(express.urlencoded({ extended: true })); // Para análise de dados de formu
 
 // Importe outras rotas, se aplicável
 
