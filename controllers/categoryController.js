@@ -10,7 +10,7 @@ async function getAllCategories(req, res) {
   }
 }
 
-// Controlador para buscar uma categoria por ID
+// Controlador para buscar uma categoria por ID da Categoria
 async function getCategoryById(req, res) {
   const categoryId = req.params.id;
 
