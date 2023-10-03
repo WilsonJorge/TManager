@@ -6,8 +6,10 @@ async function getAllCategories(req, res) {
     const categories = await Category.getAll();
     res.status(200).json(categories);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao buscar categorias.' });
+    console.error('Erro ao buscar categorias:', error);
+    res.status(500).json({ error: 'Erro interno ao buscar categorias.' });
   }
+  
 }
 
 // Controlador para buscar uma categoria por ID da Categoria
