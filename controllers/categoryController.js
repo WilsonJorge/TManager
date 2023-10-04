@@ -6,8 +6,8 @@ async function getAllCategories(req, res) {
     const categories = await Category.getAll();
     res.status(200).json(categories);
   } catch (error) {
-    console.error('Erro ao buscar categorias:', error);
-    res.status(500).json({ error: 'Erro interno ao buscar categorias.' });
+    console.error('Erro ao buscar categorias da Tarefa:', error);
+    res.status(500).json({ error: 'Erro interno ao buscar categorias da Tarefa.' });
   }
   
 }
