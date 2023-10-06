@@ -19,8 +19,7 @@ router.post('/', departamentController.createDepartament);
 // Rota para atualizar um departamento existente por ID
 router.put('/:id', departamentController.updateDepartament);
 
-// Rota para excluir um departamento por ID
-router.delete('/:id', departamentController.deleteDepartament);
+
 
 
 // Exporte o roteador
