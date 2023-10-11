@@ -19,8 +19,7 @@ router.post('/', categoryController.createCategory);
 // Rota para atualizar uma categoria existente por ID
 router.put('/:id', categoryController.updateCategory);
 
-// Rota para excluir uma categoria por ID
-router.delete('/:id', categoryController.deleteCategory);
+
 
 
 // Exporte o roteador
