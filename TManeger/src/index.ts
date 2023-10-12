@@ -1,6 +1,7 @@
 import { AppDataSource } from "./data-source"
 import { User } from "./entity/User"
 
+/*
 AppDataSource.initialize().then(async () => {
 
     console.log("Inserting a new user into the database...")
@@ -18,3 +19,11 @@ AppDataSource.initialize().then(async () => {
     console.log("Here you can setup and run express / fastify / any other framework.")
 
 }).catch(error => console.log(error))
+*/
+AppDataSource.initialize()
+    .then(() => {
+        console.log("A fonte de dados foi inicializada!")
+    })
+    .catch((err) => {
+        console.error("Erro durante a inicialização da fonte de dados", err)
+    })
