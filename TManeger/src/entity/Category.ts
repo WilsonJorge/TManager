@@ -1,35 +1,35 @@
 import { Entity, PrimaryGeneratedColumn, Column, Repository, createConnection, getConnection } from 'typeorm';
 
 @Entity()
-export class Departament {
+export class Category {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  departamento: string;
+  categoria: string;
 
   @Column()
-  numeroColaboradores: number;
+  numerocategoria: number;
 
-  static getRepository(): Repository<Departament> {
+  static getRepository(): Repository<Category> {
     const connection = getConnection(); // Recupere a conexão existente ou crie uma nova se necessário
-    return connection.getRepository(Departament);
+    return connection.getRepository(Category);
   }
 
-  static async getAll(): Promise<Departament[]> {
+  static async getAll(): Promise<Category[]> {
     return this.getRepository().find();
   }
 
-  static async getById(id: number): Promise<Departament | undefined> {
+  static async getById(id: number): Promise<Category | undefined> {
     return this.getRepository().findOne(id);
   }
 
-  static async create(departament: Departament): Promise<Departament> {
-    return this.getRepository().save(departament);
+  static async create(category: Category): Promise<Category> {
+    return this.getRepository().save(category);
   }
 
-  static async update(departament: Departament): Promise<void> {
-    await this.getRepository().update(departament.id, departament);
+  static async update(category: Category): Promise<void> {
+    await this.getRepository().update(category.id, category);
   }
 
   static async delete(id: number): Promise<void> {
@@ -42,13 +42,13 @@ createConnection({
   type: 'postgres',
   host: 'localhost',
   port: 5432,
-  username: "postgres",
-    password: "root",
-    database: "Tmaneger",
-  entities: [Departament],
+  username: 'seu_usuario',
+  password: 'sua_senha',
+  database: 'seu_banco_de_dados',
+  entities: [Category],
   synchronize: true, // Esteja ciente dos riscos ao usar sincronização em produção
 }).then(connection => {
-  // Aqui você pode começar a usar os métodos do seu modelo Departament
+  // Aqui você pode começar a usar os métodos do seu modelo Category
 }).catch(error => console.log(error));
 
-export default Departament;
+export default Category;
