@@ -40,10 +40,7 @@ app.get('/index.html', (req, res) => {
     res.sendFile(__dirname + '/views/projects.html');
   });
 
-  // Rota para a página "projects-list.html"
-  app.get('/projects-list.html', (req, res) => {
-    res.sendFile(__dirname + '/views/projects-list.html');
-  });
+
 
   // Rota para a página "project-new.html"
   app.get('/project-new.html', (req, res) => {
@@ -93,8 +90,6 @@ app.get('/index.html', (req, res) => {
 //Rota para o  Controller Categoria das Tarefas
 const categoryRoutes = require('./src/routes/CategoryRoutes');
 
-//Rota para o controlador Departamento
-//const departamentRoutes = require('./src/routes/DepartamentRoutes');
 
 app.use('/category', categoryRoutes);
 //app.use('/departament', departamentRoutes);
