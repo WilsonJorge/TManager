@@ -1,9 +1,9 @@
 import { Entity, PrimaryGeneratedColumn, Column, Repository, createConnection, getConnection } from 'typeorm';
-
+import { UUID, randomUUID } from "crypto"
 @Entity()
 export class Category {
   @PrimaryGeneratedColumn()
-  id: number;
+  id: UUID;
 
   @Column()
   categoria: string;

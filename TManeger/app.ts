@@ -1,94 +1,98 @@
-const express = require('express');
+import express = require('express');
 const app = express();
 const port = process.env.PORT || 3007;
+import categoryRoutes from './src/routes/CategoryRoutes'
 
 // Configurar o diretório público para servir arquivos estáticos
-app.use(express.static('public'));
+app.use(express.static('./src/public'));
 
 // app.get('*', (req, res) => {
 //   res.sendFile(__dirname + '/views/' + req.url + '.html');
 // });
 
-
 // Rota para renderizar o template Bootstrap
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html');
+    res.sendFile(__dirname + '/src/views/index.html');
   });
 
   // Rota para renderizar o template Bootstrap
 app.get('/index.html', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + 'src/views/index.html');
 });
 
   // Rota para a página "task-create.html"
   app.get('/task-create.html', (req, res) => {
-    res.sendFile(__dirname + '/views/task-create.html');
+    res.sendFile(__dirname + '/src/views/task-create.html');
   });
 
   // Rota para a página "task-list.html"
   app.get('/tasks-list.html', (req, res) => {
-    res.sendFile(__dirname + '/views/tasks-list.html');
+    res.sendFile(__dirname + '/src/views/tasks-list.html');
   });
 
    // Rota para a página "task-edit.html"
    app.get('/tasks-edit.html', (req, res) => {
-    res.sendFile(__dirname + '/views/tasks-edit.html');
+    res.sendFile(__dirname + '/src/views/tasks-edit.html');
   });
 
   // Rota para a página "projects.html"
   app.get('/projects.html', (req, res) => {
-    res.sendFile(__dirname + '/views/projects.html');
+    res.sendFile(__dirname + '/src/views/projects.html');
   });
-
-
 
   // Rota para a página "project-new.html"
   app.get('/project-new.html', (req, res) => {
-    res.sendFile(__dirname + '/views/project-new.html');
+    res.sendFile(__dirname + '/src/views/project-new.html');
+  });
+  
+  // Rota para a página "project-list.html"
+  app.get('/projects-list.html', (req, res) => {
+    res.sendFile(__dirname + '/src/views/projects-list.html');
   });
 
   // Rota para a página "clients.html"
   app.get('/clients.html', (req, res) => {
-    res.sendFile(__dirname + '/views/clients.html');
+    res.sendFile(__dirname + '/src/views/clients.html');
   });
 
   // Rota para a página "client-create.html"
   app.get('/client-create.html', (req, res) => {
-    res.sendFile(__dirname + '/views/client-create.html');
+    res.sendFile(__dirname + '/src/views/client-create.html');
   });
 
   // Rota para a página "category-list.html"
   app.get('/register-category.html', (req, res) => {
-    res.sendFile(__dirname + '/views/register-category.html');
+    res.sendFile(__dirname + '/src/views/register-category.html');
   });
 
   // Rota para a página "register-departament.html"
   app.get('/register-departament.html', (req, res) => {
-    res.sendFile(__dirname + '/views/register-departament.html');
+    res.sendFile(__dirname + '/src/views/register-departament.html');
   });
 
   // Rota para a página "list-category.html"
   app.get('/list-departament.html', (req, res) => {
-    res.sendFile(__dirname + '/views/list-departament.html');
+    res.sendFile(__dirname + '/src/views/list-departament.html');
   });
 
   // Rota para a página "list-departament.html"
   app.get('/list-category.html', (req, res) => {
-    res.sendFile(__dirname + '/views/list-category.html');
+    res.sendFile(__dirname + '/src/views/list-category.html');
   });
 
   // Rota para a página "edit-category.html"
   app.get('/edit-category.html', (req, res) => {
-    res.sendFile(__dirname + '/views/edit-category.html');
+    res.sendFile(__dirname + '/src/views/edit-category.html');
   });
 
   // Rota para a página ""edit-departament.html"
   app.get('/edit-departament.htmll', (req, res) => {
-    res.sendFile(__dirname + '/views/edit-departament.html');
+    res.sendFile(__dirname + '/src/views/edit-departament.html');
   });
 
 //Rota para o  Controller Categoria das Tarefas
-const categoryRoutes = require('./src/routes/CategoryRoutes');
+
+
 
 
 app.use('/category', categoryRoutes);
