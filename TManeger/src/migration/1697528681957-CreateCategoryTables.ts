@@ -1,37 +1,32 @@
 import { MigrationInterface, QueryRunner,Table } from "typeorm"
-import { UUID, randomUUID } from "crypto"
-export class CreateCategoryTable1697113590031 implements MigrationInterface {
+
+export class CreateCategoryTables1697528681957 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-              name: 'users',
+              name: 'category',
               columns: [
                 {
                   name: 'id',
-                  type: 'UUID',
+                  type: 'number',
                   isPrimary: true,
                 },
                 {
-                  name: 'firstName',
+                  name: 'categoria',
                   type: 'varchar',
                 },
                 {
-                  name: 'lastName',
-                  type: 'varchar',
-                },
-                {
-                    name: 'age',
+                    name: 'numeroCategoria',
                     type: 'number',
                   },
               ],
             })
           );
-        }
-  
+    }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('users');
+        await queryRunner.dropTable('category');
     }
 
 }

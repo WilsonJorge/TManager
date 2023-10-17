@@ -1,9 +1,8 @@
-import { Entity, PrimaryGeneratedColumn, Column, Repository, createConnection, getConnection } from 'typeorm';
-import { v4 as uuidv4 } from "uuid";
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 @Entity()
 export class Category {
-  @PrimaryGeneratedColumn("uuid")
-  id: string = uuidv4();
+  @PrimaryGeneratedColumn()
+  id :number
 
   @Column()
   categoria: string;
