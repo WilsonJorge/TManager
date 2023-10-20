@@ -19,6 +19,6 @@
    },
    "scripts": {
       "start": "ts-node-dev app.ts",
-      "typeorm": "typeorm-ts-node-commonjs"
+      "typeorm": "ts-node-dev node_modules/typeorm/cli.js migration:run --dataSource src/datasource.ts"
    }
 }

@@ -8,7 +8,7 @@ export class CreateDepartamentTable1697113592650 implements MigrationInterface {
               columns: [
                 {
                   name: 'id',
-                  type: 'number',
+                  type: 'integer',
                   isPrimary: true,
                 },
                 {
@@ -17,7 +17,7 @@ export class CreateDepartamentTable1697113592650 implements MigrationInterface {
                 },
                 {
                     name: 'numeroColaboradores',
-                    type: 'number',
+                    type: 'integer',
                   },
               ],
             })
