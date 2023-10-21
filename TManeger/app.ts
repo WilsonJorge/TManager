@@ -1,7 +1,7 @@
 import express = require('express');
 const app = express();
 const port = process.env.PORT || 3007;
-import categoryRoutes from './src/routes/CategoryRoutes'
+import categoryRoutes from './src/routes/categoryRoutes'
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('./src/public'));
@@ -92,13 +92,11 @@ app.get('/index.html', (req, res) => {
 
 //Rota para o  Controller Categoria das Tarefas
 
-
-
-
-app.use('/category', categoryRoutes);
-//app.use('/departament', departamentRoutes);
+app.use('/categories', categoryRoutes);
+//app.use('/departaments', departamentRoutes);
+//app.use('/categories', userRoutes);
 app.use((req, res, next) => {
-  res.status(404).send('Página não encontrada');
+  res.status(404).send('Página não encontrada,Tente Novamente');
 });
 // Use outros caminhos e rotas, se aplicável
 

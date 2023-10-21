@@ -6,7 +6,7 @@ import DepartamentController from '../controller/DepartamentController'; // Impo
 const router = Router();
 
 // Defina as rotas para o CategoryController
-router.get('/departament', DepartamentController.getAll);
-router.post('/departament', DepartamentController.createDepartament);
+router.get('/departaments', DepartamentController.getAll);
+router.post('/departaments', DepartamentController.createDepartament);
 
 export default router;
