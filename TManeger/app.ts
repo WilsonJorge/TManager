@@ -92,12 +92,6 @@ app.get('/index.html', (req, res) => {
 
 //Rota para o  Controller Categoria das Tarefas
 
-app.use('/categories', categoryRoutes);
-//app.use('/departaments', departamentRoutes);
-//app.use('/categories', userRoutes);
-app.use((req, res, next) => {
-  res.status(404).send('Página não encontrada,Tente Novamente');
-});
 // Use outros caminhos e rotas, se aplicável
 
 app.use(express.json()); // 
