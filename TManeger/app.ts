@@ -1,7 +1,8 @@
 import express = require('express');
 const app = express();
-const port = process.env.PORT || 3007;
+const port = process.env.PORT || 3008; // Altere o número da porta conforme necessário
 import categoryRoutes from './src/routes/categoryRoutes'
+import CategoryController from './src/controller/CategoryController';
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('./src/public'));
@@ -90,9 +91,11 @@ app.get('/index.html', (req, res) => {
     res.sendFile(__dirname + '/src/views/edit-departament.html');
   });
 
-//Rota para o  Controller Categoria das Tarefas
+// Rota para listar todas as categorias (Método GET)
+app.get('/list-category', CategoryController.getAll);
 
-// Use outros caminhos e rotas, se aplicável
+// Rota para criar uma nova categoria (Método POST)
+app.post('/create-category', CategoryController.createCategory);
 
 app.use(express.json()); // 
 app.use(express.urlencoded({ extended: true })); // Para análise de dados de formu

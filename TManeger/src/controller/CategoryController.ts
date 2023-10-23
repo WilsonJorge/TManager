@@ -22,9 +22,13 @@ class CategoryController {
       await categoryRepository.save(newCategory);
       return res.status(201).json(newCategory);
     } catch (error) {
+      console.error("Erro ao criar uma categoria:", error);
       return res.status(500).json({ error: 'Falha ao criar uma categoria' });
     }
   }
+  
+ 
+
 }
 
 export default new CategoryController();
