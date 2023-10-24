@@ -23,7 +23,8 @@ class CategoryController {
       return res.status(201).json(newCategory);
     } catch (error) {
       console.error("Erro ao criar uma categoria:", error);
-      return res.status(500).json({ error: 'Falha ao criar uma categoria' });
+      return res.status(500).json({ error: 'Falha ao criar uma categoria', reason: error.message });
+
     }
   }
   

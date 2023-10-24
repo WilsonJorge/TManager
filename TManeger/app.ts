@@ -1,15 +1,22 @@
 import express = require('express');
 const app = express();
-const port = process.env.PORT || 3008; // Altere o número da porta conforme necessário
-import categoryRoutes from './src/routes/categoryRoutes'
+const port = process.env.PORT || 8090; // Altere o número da porta conforme necessário
 import CategoryController from './src/controller/CategoryController';
+import "reflect-metadata";
+import { createConnection } from "typeorm";
+
+createConnection()
+  .then(() => {
+    // Inicie seu servidor ou continue com a lógica do aplicativo
+  })
+  .catch((error) => {
+    console.error("Erro ao conectar ao banco de dados:", error);
+  });
+
 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('./src/public'));
 
-// app.get('*', (req, res) => {
-//   res.sendFile(__dirname + '/views/' + req.url + '.html');
-// });
 
 // Rota para renderizar o template Bootstrap
 app.get('/', (req, res) => {
