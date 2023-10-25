@@ -22,9 +22,10 @@ class DepartamentController {
       await departamentRepository.save(newDepartament);
       return res.status(201).json(newDepartament);
     } catch (error) {
-      return res.status(500).json({ error: 'Falha ao criar um departamento' });
-    }
+      console.error("Erro ao criar uma Departamento:", error);
+      return res.status(500).json({ error: 'Falha ao criar uma Departamento', reason: error.message });
   }
+}
 }
 
 export default new DepartamentController();

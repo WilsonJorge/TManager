@@ -4,6 +4,7 @@ const port = process.env.PORT || 8090; // Altere o número da porta conforme nec
 import CategoryController from './src/controller/CategoryController';
 import "reflect-metadata";
 import { createConnection } from "typeorm";
+import DepartamentController from './src/controller/DepartamentController';
 
 createConnection()
   .then(() => {
@@ -99,10 +100,17 @@ app.get('/index.html', (req, res) => {
   });
 
 // Rota para listar todas as categorias (Método GET)
-app.get('/list-category', CategoryController.getAll);
+app.get('/api/categorys', CategoryController.getAll);
 
 // Rota para criar uma nova categoria (Método POST)
-app.post('/create-category', CategoryController.createCategory);
+app.post('/api/categorys', CategoryController.createCategory);
+
+// Rota para listar todas as categorias (Método GET)
+app.get('/api/departament', DepartamentController.getAll);
+
+// Rota para criar uma nova categoria (Método POST)
+app.post('/api/departament', DepartamentController.createDepartament);
+
 
 app.use(express.json()); // 
 app.use(express.urlencoded({ extended: true })); // Para análise de dados de formu
