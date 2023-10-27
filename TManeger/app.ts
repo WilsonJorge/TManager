@@ -105,11 +105,7 @@ app.get('/api/categorys', CategoryController.getAll);
 // Rota para criar uma nova categoria (Método POST)
 app.post('/api/categorys', CategoryController.createCategory);
 
-// Rota para listar todas as categorias (Método GET)
-app.get('/api/departament', DepartamentController.getAll);
 
-// Rota para criar uma nova categoria (Método POST)
-app.post('/api/departament', DepartamentController.createDepartament);
 
 
 app.use(express.json()); // 
