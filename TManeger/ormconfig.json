@@ -4,7 +4,7 @@
     "port": 5432,
     "username": "postgres",
     "password": "root",
-    "database": "Tmaneger",
+    "database": "TManeger",
     "synchronize": false,
     "logging": true,
     "entities": ["./src/entity/*.ts"],

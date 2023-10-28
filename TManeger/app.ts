@@ -1,6 +1,6 @@
 import express = require('express');
 const app = express();
-const port = process.env.PORT || 8090; // Altere o número da porta conforme necessário
+const port = process.env.PORT || 8080; // Altere o número da porta conforme necessário
 import CategoryController from './src/controller/CategoryController';
 import "reflect-metadata";
 import { createConnection } from "typeorm";
@@ -105,8 +105,11 @@ app.get('/api/categorys', CategoryController.getAll);
 // Rota para criar uma nova categoria (Método POST)
 app.post('/api/categorys', CategoryController.createCategory);
 
+// Rota para listar todas as categorias (Método GET)
+app.get('/api/departament', DepartamentController.getAll);
 
-
+// Rota para criar uma nova categoria (Método POST)
+app.post('/api/departament', DepartamentController.createDepartament);
 
 app.use(express.json()); // 
 app.use(express.urlencoded({ extended: true })); // Para análise de dados de formu
