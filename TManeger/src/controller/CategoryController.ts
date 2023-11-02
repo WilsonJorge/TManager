@@ -4,17 +4,7 @@ import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 import { Category } from '../entity/Category';
 
-class CategoryController {
-  async getAll(req: Request, res: Response) {
-    try {
-      const categoryRepository = getRepository(Category);
-      const categories = await categoryRepository.find();
-      return res.json(categories);
-    } catch (error) {
-      console.error('Erro ao buscar categorias:', error);
-      return res.status(500).json({ error: 'Falha ao buscar categorias' });
-    }
-  }
+
 
   async createCategory(req: Request, res: Response) {
     try {
