@@ -1,3 +1,4 @@
+import { Request, Response } from 'express';
 import express = require('express');
 const app = express();
 const port = process.env.PORT || 8080; // Altere o número da porta conforme necessário
@@ -5,6 +6,8 @@ import CategoryController from './src/controller/CategoryController';
 import "reflect-metadata";
 import { createConnection } from "typeorm";
 import DepartamentController from './src/controller/DepartamentController';
+import { request } from 'http';
+
 
 createConnection()
   .then(() => {
@@ -14,7 +17,7 @@ createConnection()
     console.error("Erro ao conectar ao banco de dados:", error);
   });
 
-
+  app.use(express.json()); // 
 // Configurar o diretório público para servir arquivos estáticos
 app.use(express.static('./src/public'));
 
@@ -111,7 +114,7 @@ app.get('/api/departament', DepartamentController.getAll);
 // Rota para criar uma nova categoria (Método POST)
 app.post('/api/departament', DepartamentController.createDepartament);
 
-app.use(express.json()); // 
+
 app.use(express.urlencoded({ extended: true })); // Para análise de dados de formu
 
 // Importe outras rotas, se aplicável
