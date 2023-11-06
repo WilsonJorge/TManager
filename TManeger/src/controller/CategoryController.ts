@@ -22,7 +22,7 @@ class CategoryController {
       const categoryRepository = getRepository(Category);
       const {categoria,numeroCategoria} = req.body
       console.log(categoria)
-      const id = Math.random()*100
+      const id = Math.floor(Math.random() * 100) + 1;
       const newCategory = categoryRepository.create({categoria,numeroCategoria,id});
       console.log('Nova categoria a ser criada:', newCategory); // Adicione esta linha para registrar a nova categoria
       await categoryRepository.save(newCategory);
