@@ -7,11 +7,6 @@ export class CreateUsersTable1697113590031 implements MigrationInterface {
               name: 'users',
               columns: [
                 {
-                  name: 'id',
-                  type: 'integer',
-                  isPrimary: true,
-                },
-                {
                   name: 'firstName',
                   type: 'varchar',
                 },

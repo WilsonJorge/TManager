@@ -7,11 +7,6 @@ export class CreateDepartamentTable1697113592650 implements MigrationInterface {
               name: 'departament',
               columns: [
                 {
-                  name: 'id',
-                  type: 'integer',
-                  isPrimary: true,
-                },
-                {
                   name: 'departamento',
                   type: 'varchar',
                 },

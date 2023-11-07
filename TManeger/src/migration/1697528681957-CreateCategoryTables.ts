@@ -7,11 +7,6 @@ export class CreateCategoryTables1697528681957 implements MigrationInterface {
         name: 'category',
         columns: [
           {
-            name: 'id',
-            type: 'integer', // Correção aqui
-            isPrimary: true,
-          },
-          {
             name: 'categoria',
             type: 'varchar',
           },
