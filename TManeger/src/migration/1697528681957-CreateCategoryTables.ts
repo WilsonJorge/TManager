@@ -7,12 +7,19 @@ export class CreateCategoryTables1697528681957 implements MigrationInterface {
         name: 'category',
         columns: [
           {
+            name: 'id', // Add id as the primary key
+            type: 'int',
+            isPrimary: true,
+            isGenerated: true,
+            generationStrategy: 'increment',
+          },
+          {
             name: 'categoria',
             type: 'varchar',
           },
           {
             name: 'numeroCategoria',
-            type: 'integer', // Correção aqui
+            type: 'integer',
           },
         ],
       })
@@ -23,4 +30,3 @@ export class CreateCategoryTables1697528681957 implements MigrationInterface {
     await queryRunner.dropTable('category');
   }
 }
-

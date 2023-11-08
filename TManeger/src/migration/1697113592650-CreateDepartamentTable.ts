@@ -7,6 +7,13 @@ export class CreateDepartamentTable1697113592650 implements MigrationInterface {
               name: 'departament',
               columns: [
                 {
+                  name: 'id', // Add id as the primary key
+                  type: 'int',
+                  isPrimary: true,
+                  isGenerated: true,
+                  generationStrategy: 'increment',
+                },
+                {
                   name: 'departamento',
                   type: 'varchar',
                 },
