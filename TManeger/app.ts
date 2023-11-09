@@ -7,6 +7,7 @@ import "reflect-metadata";
 import { createConnection } from "typeorm";
 import DepartamentController from './src/controller/DepartamentController';
 import { request } from 'http';
+import UserController from './src/controller/UserController';
 
 
 createConnection()
@@ -113,6 +114,12 @@ app.get('/api/departament', DepartamentController.getAll);
 
 // Rota para criar uma nova categoria (Método POST)
 app.post('/api/departament', DepartamentController.createDepartament);
+
+// Rota para listar todos os users (Método GET)
+app.get('/api/users', UserController.getAll);
+
+// Rota para criar um novo User (Método POST)
+app.post('/api/users', UserController.createUser);
 
 
 app.use(express.urlencoded({ extended: true })); // Para análise de dados de formu

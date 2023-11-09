@@ -15,21 +15,24 @@ class CategoryController {
     }
   }
 
-  async createCategory(req: Request, res: Response) {
+  async createUser(req: Request, res: Response) {
     try {
-      console.log('Corpo da solicitação:', req.body); // Adicione esta linha para registrar o corpo da solicitação
+      console.log('Corpo da solicitação:', req); // Adicione esta linha para registrar o corpo da solicitação
       const userRepository = getRepository(User);
-      const newUser = userRepository.create(req.body);
-      console.log('Novo User a ser criada:', newUser); // Adicione esta linha para registrar a nova categoria
+      const { firstName,lastName,age} = req.body
+      console.log(firstName)
+      const newUser = userRepository.create({firstName,lastName,age});
+      console.log('Novo User a ser criado:', newUser); // Adicione esta linha para registrar a nova categoria
       await userRepository.save(newUser);
       console.log('User criado com sucesso:', newUser); // Adicione esta linha para registrar a categoria criada
       return res.status(201).json(newUser);
     } catch (error) {
-      console.error('Erro ao criar uma User:', error);
-      return res.status(500).json({ error: 'Falha ao criar uma User,Tente Novamente', reason: error.message });
+      console.error('Erro ao criar um user:', error);
+      return res.status(500).json({ error: 'Falha ao criar um user,Tente Novamente', reason: error.message });
     }
   }
 }
+
 
 export default new CategoryController();
 
