@@ -35,43 +35,66 @@ class CategoryController {
 
   async updateCategory(req: Request, res: Response) {
     try {
-      console.log('Corpo da solicitação:', req); // Adicione esta linha para registrar o corpo da solicitação
       const categoryRepository = getRepository(Category);
-      const {id, categoria, numeroCategoria} = req.body
-      const category = await categoryRepository.findOne({id});
-      if (!category) {
+      const categoryId: number = +req.params.id; // Certifique-se de que categoryId é do tipo correto (neste caso, número).
+      // Verifique se o ID da categoria foi fornecido
+      if (!categoryId) {
+        return res.status(400).json({ error: 'ID da categoria não fornecido' });
+      }
+  
+      // Busque a categoria no banco de dados
+      const existingCategory = await categoryRepository.findOne({
+        where: { id: categoryId }
+      });
+      // Verifique se a categoria existe
+      if (!existingCategory) {
         return res.status(404).json({ error: 'Categoria não encontrada' });
       }
-      console.log('Categoria a ser atualizada:', category); // Adicione esta linha para registrar a categoria a ser atualizada
-      category.categoria = categoria;
-      category.numeroCategoria = numeroCategoria;
-      await categoryRepository.save(category);
-      console.log('Categoria atualizada com sucesso:', category); // Adicione esta linha para registrar a categoria atualizada
-      return res.status(200).json(category);
+  
+      // Atualize a categoria com os novos dados do corpo da solicitação
+      const { categoria, numeroCategoria } = req.body;
+      existingCategory.categoria = categoria;
+      existingCategory.numeroCategoria = numeroCategoria;
+  
+      // Salve as alterações no banco de dados
+      await categoryRepository.save(existingCategory);
+  
+      return res.json(existingCategory);
     } catch (error) {
-      console.error('Erro ao atualizar uma categoria:', error);
-      return res.status(500).json({ error: 'Falha ao atualizar uma categoria,Tente Novamente', reason: error.message });
+      console.error('Erro ao atualizar categoria:', error);
+      return res.status(500).json({ error: 'Falha ao atualizar categoria', reason: error.message });
     }
   }
-   
   async deleteCategory(req: Request, res: Response) {
     try {
-      console.log('Corpo da solicitação:', req); // Adicione esta linha para registrar o corpo da solicitação
       const categoryRepository = getRepository(Category);
-      const {id} = req.body
-      const category = await categoryRepository.findOne({id});
-      if (!category) {
+      const categoryId = req.params.id;
+  
+      // Verifique se o ID da categoria foi fornecido
+      if (!categoryId) {
+        return res.status(400).json({ error: 'ID da categoria não fornecido' });
+      }
+  
+      // Busque a categoria no banco de dados
+      const existingCategory = await categoryRepository.findOne({
+        where: { id: parseInt(categoryId, 10) }
+      });
+
+      // Verifique se a categoria existe
+      if (!existingCategory) {
         return res.status(404).json({ error: 'Categoria não encontrada' });
       }
-      console.log('Categoria a ser excluída:', category); // Adicione esta linha para registrar a categoria a ser excluída
-      await categoryRepository.remove(category);
-      console.log('Categoria excluída com sucesso:', category); // Adicione esta linha para registrar a categoria excluída
-      return res.status(200).json(category);
+  
+      // Remova a categoria do banco de dados
+      await categoryRepository.remove(existingCategory);
+  
+      return res.json({ message: 'Categoria removida com sucesso' });
     } catch (error) {
-      console.error('Erro ao excluir uma categoria:', error);
-      return res.status(500).json({ error: 'Falha ao excluir uma categoria,Tente Novamente', reason: error.message });
+      console.error('Erro ao excluir categoria:', error);
+      return res.status(500).json({ error: 'Falha ao excluir categoria', reason: error.message });
     }
   }
+  
 
 }
 

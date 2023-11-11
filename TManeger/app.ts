@@ -109,6 +109,13 @@ app.get('/api/categorys', CategoryController.getAll);
 // Rota para criar uma nova categoria (Método POST)
 app.post('/api/categorys', CategoryController.createCategory);
 
+//Rota para actualizar a categoria (Método PUT)
+
+app.put('/api/categorys/:id', CategoryController.updateCategory)
+
+//ROta para Apagar uma categoria (Método Delete)
+app.delete('/api/categorys/:id', CategoryController.deleteCategory)
+
 // Rota para listar todas as categorias (Método GET)
 app.get('/api/departament', DepartamentController.getAll);
 
