@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 import { User } from '../entity/User';
 
-class CategoryController {
+class UserController{
   async getAll(req: Request, res: Response) {
     try {
       const userRepository = getRepository(User);
@@ -19,10 +19,10 @@ class CategoryController {
     try {
       console.log('Corpo da solicitação:', req); // Adicione esta linha para registrar o corpo da solicitação
       const userRepository = getRepository(User);
-      const { firstName,lastName,age} = req.body
-      console.log(firstName)
+      const {firstName,lastName,age} = req.body
+      console.log(lastName)
       const newUser = userRepository.create({firstName,lastName,age});
-      console.log('Novo User a ser criado:', newUser); // Adicione esta linha para registrar a nova categoria
+      console.log('Novo user a ser criado:', newUser); // Adicione esta linha para registrar a nova categoria
       await userRepository.save(newUser);
       console.log('User criado com sucesso:', newUser); // Adicione esta linha para registrar a categoria criada
       return res.status(201).json(newUser);
@@ -31,10 +31,10 @@ class CategoryController {
       return res.status(500).json({ error: 'Falha ao criar um user,Tente Novamente', reason: error.message });
     }
   }
+
 }
 
-
-export default new CategoryController();
+export default new  UserController();
 
 
 

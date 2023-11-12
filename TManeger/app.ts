@@ -116,6 +116,13 @@ app.put('/api/categorys/:id', CategoryController.updateCategory)
 //ROta para Apagar uma categoria (Método Delete)
 app.delete('/api/categorys/:id', CategoryController.deleteCategory)
 
+//Rota para actualizar o Departamento (Método PUT)
+
+app.put('/api/departament/:id', DepartamentController.updateDepartament)
+
+//ROta para Apagar um Departamento (Método Delete)
+app.delete('/api/departament/:id', DepartamentController.deleteDepartament)
+
 // Rota para listar todas as categorias (Método GET)
 app.get('/api/departament', DepartamentController.getAll);
 
