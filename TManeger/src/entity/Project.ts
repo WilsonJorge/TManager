@@ -1,14 +1,24 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column,OneToMany } from "typeorm"
+import { Task } from "./Task";
 @Entity()
 export class Project {
     @PrimaryGeneratedColumn()
     id: number;
 
     @Column()
-    nome: string
+    projectName: string
 
-    @Column()
-    email: string
+    @Column({ type: "date" }) 
+    startDate: Date;
+
+    @Column({ type: "date" }) 
+    endDate: Date;
+
+    @Column({
+        type: "enum",
+        enum: ["Interno", "Externo"]
+    })
+    projectCategory :string
 
     @Column()
     country: String
@@ -27,6 +37,9 @@ export class Project {
 
      @Column()
      Andress : string
+     
+     @OneToMany(() => Task, task => task.project)
+     tasks: Task[];
 
 
 }

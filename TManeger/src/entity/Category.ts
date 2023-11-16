@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column,OneToMany } from "typeorm";
+import { Task } from "./Task";
 
 @Entity()
 export class Category {
@@ -10,5 +11,8 @@ export class Category {
 
   @Column()
   numeroCategoria: number;
+
+  @OneToMany(() => Task, task => task.category)
+    tasks: Task[];
 }
 

@@ -10,6 +10,12 @@ export class Task {
     @Column()
     title: string;
 
+    @Column({ type: "date" }) 
+    startDate: Date;
+
+    @Column({ type: "date" }) 
+    endDate: Date;
+
     @Column()
     assignTo: string;
 
