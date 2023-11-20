@@ -32,22 +32,22 @@ class ClientController {
     }
   }
 
-  async updateCategory(req: Request, res: Response) {
+  async updateClient(req: Request, res: Response) {
     try {
-      const categoryRepository = getRepository(Category);
-      const categoryId: number = +req.params.id; // Certifique-se de que categoryId é do tipo correto (neste caso, número).
+      const clientRepository = getRepository(Client);
+      const clientId: number = +req.params.id; // Certifique-se de que categoryId é do tipo correto (neste caso, número).
       // Verifique se o ID da categoria foi fornecido
-      if (!categoryId) {
-        return res.status(400).json({ error: 'ID da categoria não fornecido' });
+      if (!clientId) {
+        return res.status(400).json({ error: 'ID do cliente não fornecido' });
       }
   
       // Busque a categoria no banco de dados
-      const existingCategory = await categoryRepository.findOne({
-        where: { id: categoryId }
+      const existingClient = await clientRepository.findOne({
+        where: { id: clientId }
       });
       // Verifique se a categoria existe
-      if (!existingCategory) {
-        return res.status(404).json({ error: 'Categoria não encontrada' });
+      if (!existingClient) {
+        return res.status(404).json({ error: 'Cliente não encontrada' });
       }
   
       // Atualize a categoria com os novos dados do corpo da solicitação
@@ -81,7 +81,7 @@ class ClientController {
 
       // Verifique se a categoria existe
       if (!existingCategory) {
-        return res.status(404).json({ error: 'Categoria não encontrada' });
+        return res.status(404).json({ error: 'Cliente não encontrada' });
       }
   
       // Remova a categoria do banco de dados
