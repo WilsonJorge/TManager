@@ -99,7 +99,6 @@ class TaskController {
       return res.status(500).json({ error: 'Falha ao excluir tarefa', reason: error.message });
     }
   }
-  
 
 }
 

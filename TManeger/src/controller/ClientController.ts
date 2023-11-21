@@ -15,19 +15,19 @@ class ClientController {
     }
   }
 
-  async createCategory(req: Request, res: Response) {
+  async createClient(req: Request, res: Response) {
     try {
       console.log('Corpo da solicitação:', req); // Adicione esta linha para registrar o corpo da solicitação
-      const categoryRepository = getRepository(Category);
-      const {categoria,numeroCategoria} = req.body
-      console.log(categoria)
-      const newCategory = categoryRepository.create({categoria,numeroCategoria});
-      console.log('Nova categoria a ser criada:', newCategory); // Adicione esta linha para registrar a nova categoria
-      await categoryRepository.save(newCategory);
-      console.log('Categoria criada com sucesso:', newCategory); // Adicione esta linha para registrar a categoria criada
-      return res.status(201).json(newCategory);
+      const clientRepository = getRepository(Client);
+      const {nome, email, country, telephone, company, companyPhone,  city,  Andress} = req.body
+      
+      const newClient = clientRepository.create({nome, email, country, telephone, company, companyPhone,  city,  Andress});
+      console.log('Novo cliente a ser criado:', newClient); // Adicione esta linha para registrar a nova categoria
+      await clientRepository.save(newClient);
+      console.log('Cliente criado com sucesso:', newClient); // Adicione esta linha para registrar a categoria criada
+      return res.status(201).json(newClient);
     } catch (error) {
-      console.error('Erro ao criar uma categoria:', error);
+      console.error('Erro ao criar um Cliente:', error);
       return res.status(500).json({ error: 'Falha ao criar uma categoria,Tente Novamente', reason: error.message });
     }
   }
@@ -51,46 +51,52 @@ class ClientController {
       }
   
       // Atualize a categoria com os novos dados do corpo da solicitação
-      const { categoria, numeroCategoria } = req.body;
-      existingCategory.categoria = categoria;
-      existingCategory.numeroCategoria = numeroCategoria;
+      const {nome, email, country, telephone, company, companyPhone,  city,  Andress  } = req.body;
+      existingClient.nome = nome;
+      existingClient.email = email;
+      existingClient.country= country;
+      existingClient.telephone=telephone;
+      existingClient.company= company;
+      existingClient.companyPhone=companyPhone;
+      existingClient.city=city;
+      existingClient.Andress=Andress;
   
       // Salve as alterações no banco de dados
-      await categoryRepository.save(existingCategory);
+      await clientRepository.save(existingClient);
   
-      return res.json(existingCategory);
+      return res.json(existingClient);
     } catch (error) {
-      console.error('Erro ao atualizar categoria:', error);
-      return res.status(500).json({ error: 'Falha ao atualizar categoria', reason: error.message });
+      console.error('Erro ao atualizar cliente:', error);
+      return res.status(500).json({ error: 'Falha ao atualizar cliente', reason: error.message });
     }
   }
   async deleteCategory(req: Request, res: Response) {
     try {
-      const categoryRepository = getRepository(Category);
-      const categoryId = req.params.id;
+      const clientRepository = getRepository(Client);
+      const clientId = req.params.id;
   
       // Verifique se o ID da categoria foi fornecido
-      if (!categoryId) {
-        return res.status(400).json({ error: 'ID da categoria não fornecido' });
+      if (!clientId) {
+        return res.status(400).json({ error: 'ID do Cliente não fornecido' });
       }
   
       // Busque a categoria no banco de dados
-      const existingCategory = await categoryRepository.findOne({
-        where: { id: parseInt(categoryId, 10) }
+      const existingClient = await clientRepository.findOne({
+        where: { id: parseInt(clientId, 10) }
       });
 
       // Verifique se a categoria existe
-      if (!existingCategory) {
-        return res.status(404).json({ error: 'Cliente não encontrada' });
+      if (!existingClient) {
+        return res.status(404).json({ error: 'Cliente não encontrado' });
       }
   
       // Remova a categoria do banco de dados
-      await categoryRepository.remove(existingCategory);
+      await clientRepository.remove(existingClient);
   
-      return res.json({ message: 'Categoria removida com sucesso' });
+      return res.json({ message: 'Cliente removido com sucesso' });
     } catch (error) {
-      console.error('Erro ao excluir categoria:', error);
-      return res.status(500).json({ error: 'Falha ao excluir categoria', reason: error.message });
+      console.error('Erro ao excluir cliente:', error);
+      return res.status(500).json({ error: 'Falha ao excluir cliente', reason: error.message });
     }
   }
   
