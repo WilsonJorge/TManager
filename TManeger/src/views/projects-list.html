@@ -594,5 +594,47 @@
 		<!-- PROJECT-LIST JS-->
 		<script src="/js/project-list.js"></script>
 
+		<script>
+			async function buscarTarefas() {
+   try {
+	 const resposta = await fetch('URL_DO_SEU_BACKEND/tarefas', {
+	   method: 'GET',
+	   headers: {
+		 'Content-Type': 'application/json',
+	   },
+	 });
+ 
+	 if (!resposta.ok) {
+	   throw new Error('Não foi possível buscar as tarefas');
+	 }
+ 
+	 const tarefas = await resposta.json();
+	 mostrarTarefas(tarefas);
+   } catch (erro) {
+	 console.error('Ocorreu um erro ao buscar as tarefas:', erro);
+   }
+ }
+ 
+ function mostrarTarefas(tarefas) {
+   const listaTarefas = document.getElementById('tarefas-lista');
+ 
+   tarefas.forEach((tarefa) => {
+	 const tr = document.createElement('tr');
+	 tr.innerHTML = `
+	   <td>${tarefa.id}</td>
+	   <td>${tarefa.nome}</td>
+	   <td>${tarefa.descricao}</td>
+	 `;
+	 listaTarefas.appendChild(tr);
+   });
+ }
+ 
+ // Chame a função buscarTarefas() para carregar as tarefas quando a página carregar
+ window.onload = () => {
+   buscarTarefas();
+ };
+ 
+	 </script>
+
 	</body>
 </html>
