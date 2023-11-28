@@ -529,7 +529,7 @@
 		<!-- CUSTOM JS -->
 		<script src="/js/custom.js"></script>
 		<script>
-			async function buscarTarefas() {
+		 async function buscarTarefas() {
    try {
 	 const resposta = await fetch('URL_DO_SEU_BACKEND/tarefas', {
 	   method: 'GET',
@@ -542,23 +542,45 @@
 	   throw new Error('Não foi possível buscar as tarefas');
 	 }
  
-	 const tarefas = await resposta.json();
-	 mostrarTarefas(tarefas);
+	 const clientes = await resposta.json();
+	 mostrarClientes( clientes);
    } catch (erro) {
-	 console.error('Ocorreu um erro ao buscar as tarefas:', erro);
+	 console.error('Ocorreu um erro ao buscar os Clientes:', erro);
    }
  }
  
- function mostrarTarefas(tarefas) {
-   const listaTarefas = document.getElementById('tarefas-lista');
+ function mostrarClientes(clientes) {
+   const listaClientes = document.getElementById('clientes-lista');
  
-   tarefas.forEach((tarefa) => {
-	 const tr = document.createElement('tr');
+   clientes.forEach((cliente) => {
+	 const tr = document.createElement('clientes');
 	 tr.innerHTML = `
-	   <td>${tarefa.id}</td>
-	   <td>${tarefa.nome}</td>
+	   <td>${cliente.email}</td>
+	   <td>${cliente.country}</td>
 	   <td>${tarefa.descricao}</td>
 	 `;
+	 nome: string
+
+@Column()
+email: string
+
+@Column()
+country: String
+
+@Column()
+telephone : number
+
+@Column()
+ company : string
+
+ @Column()
+ companyPhone : number
+
+ @Column()
+ city: string
+
+ @Column()
+ Andress : string
 	 listaTarefas.appendChild(tr);
    });
  }
