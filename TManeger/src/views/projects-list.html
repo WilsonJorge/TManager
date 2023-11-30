@@ -595,9 +595,9 @@
 		<script src="/js/project-list.js"></script>
 
 		<script>
-			async function buscarTarefas() {
+			async function buscaProjectos() {
    try {
-	 const resposta = await fetch('URL_DO_SEU_BACKEND/tarefas', {
+	 const resposta = await fetch('URL_DO_SEU_BACKEND/projectos', {
 	   method: 'GET',
 	   headers: {
 		 'Content-Type': 'application/json',
@@ -605,27 +605,34 @@
 	 });
  
 	 if (!resposta.ok) {
-	   throw new Error('Não foi possível buscar as tarefas');
+	   throw new Error('Não foi possível buscar os projectos');
 	 }
  
-	 const tarefas = await resposta.json();
-	 mostrarTarefas(tarefas);
+	 const projectos = await resposta.json();
+	 mostrarTarefas(projectos);
    } catch (erro) {
-	 console.error('Ocorreu um erro ao buscar as tarefas:', erro);
+	 console.error('Ocorreu um erro ao buscar os Projectos:', erro);
    }
  }
  
- function mostrarTarefas(tarefas) {
-   const listaTarefas = document.getElementById('tarefas-lista');
+ function mostrarTarefas(projectos) {
+   const listaTarefas = document.getElementById('projectos-lista');
  
-   tarefas.forEach((tarefa) => {
+   projectos.forEach((projecto) => {
 	 const tr = document.createElement('tr');
 	 tr.innerHTML = `
-	   <td>${tarefa.id}</td>
-	   <td>${tarefa.nome}</td>
-	   <td>${tarefa.descricao}</td>
+	   <td>${projecto.id}</td>
+	   <td>${projecto.projectName}</td>
+	   <td>${projecto.startDate}</td>
+	   <td>${projecto.endDate}</td>
+	   <td>${projecto.projectCategory}</td>
+	   <td>${projecto.country}</td>
+	   <td>${projecto.company}</td>
+	   <td>${projecto.companyPhone}</td>
+	   <td>${projecto.city}</td>
+	   <td>${projecto. Andress}</td>
 	 `;
-	 listaTarefas.appendChild(tr);
+	 listaProjectos.appendChild(tr);
    });
  }
  

@@ -529,9 +529,9 @@
 		<!-- CUSTOM JS -->
 		<script src="/js/custom.js"></script>
 		<script>
-		 async function buscarTarefas() {
+		 async function buscarClientes() {
    try {
-	 const resposta = await fetch('URL_DO_SEU_BACKEND/tarefas', {
+	 const resposta = await fetch('URL_DO_SEU_BACKEND/clientes', {
 	   method: 'GET',
 	   headers: {
 		 'Content-Type': 'application/json',
@@ -539,7 +539,7 @@
 	 });
  
 	 if (!resposta.ok) {
-	   throw new Error('Não foi possível buscar as tarefas');
+	   throw new Error('Não foi possível buscar os clientes');
 	 }
  
 	 const clientes = await resposta.json();
@@ -557,37 +557,17 @@
 	 tr.innerHTML = `
 	   <td>${cliente.email}</td>
 	   <td>${cliente.country}</td>
-	   <td>${tarefa.descricao}</td>
-	 `;
-	 nome: string
-
-@Column()
-email: string
-
-@Column()
-country: String
-
-@Column()
-telephone : number
-
-@Column()
- company : string
-
- @Column()
- companyPhone : number
-
- @Column()
- city: string
-
- @Column()
- Andress : string
-	 listaTarefas.appendChild(tr);
+	   <td>${cliente.telephone}</td>
+	   <td>${cliente.company}</td>
+	   <td>${cliente.companyPhone}</td>
+	   <td>${cliente.city}</td>
+	   <td>${cliente. Andress}</td>`;
+	 listaClientes.appendChild(tr);
    });
  }
- 
  // Chame a função buscarTarefas() para carregar as tarefas quando a página carregar
  window.onload = () => {
-   buscarTarefas();
+   buscarClientes();
  };
  
 	 </script>
