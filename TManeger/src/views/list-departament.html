@@ -443,6 +443,10 @@
 <!-- BACK-TO-TOP -->
 <a href="#top" id="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
 
+
+
+		
+
 	<!-- JQUERY JS -->
 	<script src="/js/jquery.min.js"></script>
 	<!-- BOOTSTRAP JS -->
@@ -454,7 +458,48 @@
 	
 	<script src="/js/plugins/sidemenu/sidemenu.js"></script>
 	<!-- APEXCHART JS -->
-	
+
+<script>
+    async function buscarDepartamentos() {
+		try {
+				const resposta = await fetch('', {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				});
+
+				if (!resposta.ok) {
+				throw new Error('Não foi possível buscar os Departamentos');
+				}
+
+				const departamentos = await resposta.json();
+				mostrarTarefas(departamentos);
+				} catch (erro) {
+				console.error('Ocorreu um erro ao buscar os Departamentos:', erro);
+				}
+			}
+
+			function mostrarDepartamentos(departamentos) {
+				const listaDepartamentos = document.getElementById('departamentos');
+
+				departamentos.forEach((departamento) => {
+				const tr = document.createElement('tr');
+				tr.innerHTML = `
+				<td>${departamento.id}</td>
+				<td>${departamento.categoria}</td>
+				<td>${tarefa.numeroCategoria}</td>
+				`;
+				listaTarefas.appendChild(tr);
+				});
+				}
+
+		// Chame a função buscarTarefas() para carregar as tarefas quando a página carregar
+		window.onload = () => {
+		buscarTarefas();
+		};
+
+</script>
 	<script src="/js/apexcharts.js"></script>
 
 	<!-- INTERNAL SELECT2 JS -->
