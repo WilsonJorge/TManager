@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import express = require('express');
 const app = express();
-const port = process.env.PORT || 8080; // Altere o número da porta conforme necessário
+const port = process.env.PORT || 3000; // Altere o número da porta conforme necessário
 import CategoryController from './src/controller/CategoryController';
 import "reflect-metadata";
 import { createConnection } from "typeorm";
